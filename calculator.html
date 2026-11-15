@@ -1,324 +1,625 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mortgage Calculator — Mortgage Broker | Payments &amp; Amortization Schedule</title>
-  <meta name="description" content="Calculate your true monthly mortgage payment including principal, interest, taxes, insurance, and PMI. Generate full lifetime amortization schedules.">
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Mortgage — Mortgage Broker (Real Estate Mortgage &amp; Loans Funding)</title>
+    <meta name="description" content="Mortgage Broker - Tailored home loans, mortgage refinance, apartment commercial financing, and competitive interest rates.">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS Vendor & Theme Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/remixicon.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="inner-page">
 
-  <!-- Top Info Bar -->
-  <div class="top-bar">
-    <div class="container-wide top-bar-inner">
-      <div class="top-bar-left">
-        <span class="badge-nmls">NMLS #1849204</span>
-        <div class="top-info-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-          <a href="tel:+18005552345">(800) 555-2345</a>
+    <!-- Search Popup Modal -->
+    <div class="search-popup">
+        <div class="search-popup__content">
+            <button type="button" class="search-close-btn">&times;</button>
+            <form onsubmit="event.preventDefault(); window.location.href='loan-programs.html';">
+                <input type="text" placeholder="Search loan programs, mortgage rates..." required>
+            </form>
         </div>
-      </div>
-      <div class="top-bar-right">
-        <a href="apply.html" style="color:var(--accent-light); font-weight:600;">Check Pre-Approval &rarr;</a>
-      </div>
     </div>
-  </div>
 
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container-wide">
-      <nav class="navbar">
-        <a href="index.html" class="nav-brand">
-          <img src="images/logo.svg" alt="Mortgage Broker Logo">
-        </a>
-        <ul class="nav-menu">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-          <li class="nav-item"><a href="loan-programs.html" class="nav-link">Loan Programs</a></li>
-          <li class="nav-item"><a href="calculator.html" class="nav-link active">Mortgage Calculator</a></li>
-          <li class="nav-item"><a href="apply.html" class="nav-link">Apply Online</a></li>
-          <li class="nav-item"><a href="team.html" class="nav-link">Our Team</a></li>
-          <li class="nav-item"><a href="faqs.html" class="nav-link">Resources</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-        <div class="nav-actions">
-          <a href="apply.html" class="btn btn-primary">Start Pre-Approval</a>
-          <button type="button" class="mobile-nav-toggle" aria-label="Open mobile menu">
-            <span></span><span></span><span></span>
-          </button>
-        </div>
-      </nav>
-    </div>
-  </header>
+    <header id="masthead"  >
+			<p class="main-title bhf-hidden" ><a href="index.html" title="Ralo" rel="home">Ralo</a></p>
+					<div   class="elementor elementor-1214">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-4185a1b top-header-area bg-gray2 position-relative z-2 border ptb-20 elementor-section-boxed elementor-section-height-default elementor-section-height-default"  >
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-9124be7"  >
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3f28897 elementor-widget elementor-widget-RaloTopHeaderInfo"   >
+				<div class="elementor-widget-container">
+					
+            <ul class="ps-0 mb-0 list-unstyled info-link d-sm-flex text-center flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                                    <li>
+
+                                                    <a href="tel:487432602396" target="_blank" rel="nofollow">
+                        
+                                                                                                <i class="ri-phone-fill"></i>
+                                                            
+                            +48 74326 02396
+                                                    </a>
+                        
+                    </li>
+                                    <li>
+
+                        
+                                                                                                <i class="ri-calendar-line"></i>
+                                                            
+                            Mon - Fri 12:00 - 18:00
+                        
+                    </li>
+                                    <li>
+
+                        
+                                                                                                <i class="ri-map-pin-line"></i>
+                                                            
+                             Hilton, TY56/90 NY, USA
+                        
+                    </li>
+                            </ul>
+
+        				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6ae337b"  >
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ed1a62f elementor-widget elementor-widget-RaloTopHeaderLink"   >
+				<div class="elementor-widget-container">
+					
+            <ul class="ps-0 mb-0 list-unstyled import-link d-flex flex-wrap align-items-center justify-content-center justify-content-lg-end">
+                                    <li>
+                        <a href="about.html" target="_blank" rel="nofollow">
+                            Career                        </a>
+                    </li>
+                                    <li>
+                        <a href="about.html" target="_blank" rel="nofollow">
+                            About Us                        </a>
+                    </li>
+                                    <li>
+                        <a href="contact.html" target="_blank" rel="nofollow">
+                             Contact                        </a>
+                    </li>
+                            </ul>
+
+        				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-1c2bf7b elementor-section-full_width elementor-section-height-default elementor-section-height-default"  >
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-af20b7e"  >
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3d16f4e elementor-widget elementor-widget-ralo-navbar"   >
+				<div class="elementor-widget-container">
+					        <!-- Start Navbar Area -->
 
-  <!-- Mobile Drawer -->
-  <div class="mobile-drawer-overlay"></div>
-  <aside class="mobile-drawer">
-    <div class="mobile-drawer-head">
-      <img src="images/logo.svg" alt="Mortgage Broker">
-      <button type="button" class="btn-drawer-close">&times;</button>
-    </div>
-    <div class="mobile-drawer-menu">
-      <div class="mobile-menu-item"><a href="index.html" class="mobile-menu-link">Home</a></div>
-      <div class="mobile-menu-item"><a href="about.html" class="mobile-menu-link">About Us</a></div>
-      <div class="mobile-menu-item"><a href="loan-programs.html" class="mobile-menu-link">Loan Programs</a></div>
-      <div class="mobile-menu-item"><a href="calculator.html" class="mobile-menu-link">Mortgage Calculator</a></div>
-      <div class="mobile-menu-item"><a href="apply.html" class="mobile-menu-link">Apply Online</a></div>
-      <div class="mobile-menu-item"><a href="team.html" class="mobile-menu-link">Our Team</a></div>
-      <div class="mobile-menu-item"><a href="contact.html" class="mobile-menu-link">Contact</a></div>
-    </div>
-  </aside>
+                    <nav class="navbar navbar-expand-lg bg-white ptb-19  " id="navbar">
+                <div class="container-fluid mw-1380">
 
-  <main>
-    <!-- PAGE HERO -->
-    <section class="page-hero">
-      <div class="container">
-        <h1>Precision Mortgage Calculator &amp; Amortization Suite</h1>
-        <div class="breadcrumb">
-          <a href="index.html">Home</a>
-          <span class="divider">/</span>
-          <span>Mortgage Calculator</span>
-        </div>
-      </div>
-    </section>
+                                            <a class="navbar-brand" href="index.html">
+                                                            <img class="black-logo" src="images/ralo/ralo-black.png" alt="Ralo">
+                            
+                                                            <img class="m-logo" src="images/ralo/ralo-black.png" alt="Ralo">
+                                                    </a>
+                    
 
-    <!-- CALCULATOR SUITE COMPONENT -->
-    <section class="section">
-      <div class="container">
-        <div class="calc-container-card">
-          <div class="calc-grid">
-            <!-- Inputs Column -->
-            <div class="calc-inputs-col">
-              <h3>Loan &amp; Property Parameters</h3>
+                    <a class="navbar-toggler" data-bs-toggle="offcanvas" href="#navbarOffcanvas" role="button" aria-controls="navbarOffcanvas">
+                        <span class="burger-menu">
+                            <span class="top-bar"></span>
+                            <span class="middle-bar"></span>
+                            <span class="bottom-bar"></span>
+                        </span>
+                    </a>
 
-              <!-- Price -->
-              <div class="calc-group">
-                <div class="calc-group-header">
-                  <label class="calc-label" for="calcHomePrice">Home Purchase Price ($)</label>
-                </div>
-                <div class="calc-input-row">
-                  <input type="number" id="calcHomePrice" class="calc-text-input" value="450000" min="50000" max="2500000" step="5000">
-                  <span class="calc-unit-tag">USD</span>
-                </div>
-                <input type="range" id="calcPriceSlider" class="range-slider" min="100000" max="1500000" step="5000" value="450000" style="margin-top: 10px;">
-              </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul id="menu-primary-menu" class="navbar-nav m-auto"><li id="menu-item-200" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-200 nav-item"><a title="Home" href="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-200">Home</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-200" role="menu">
+	<li id="menu-item-14" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-14 nav-item"><a title="Home One" href="index.html" class="dropdown-item">Home One</a></li>
+	<li id="menu-item-199" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-199 nav-item"><a title="Home Two" href="home-two.html" class="dropdown-item">Home Two</a></li>
+	<li id="menu-item-274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-274 nav-item"><a title="Home Three" href="index.html" class="dropdown-item">Home Three</a></li>
+</ul>
+</li>
+<li id="menu-item-487" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-487 nav-item"><a title="Loan Program" href="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-487">Loan Program</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-487" role="menu">
+	<li id="menu-item-479" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-479 nav-item"><a title="Loan Program" href="loan-programs.html" class="dropdown-item">Loan Program</a></li>
+	<li id="menu-item-486" class="menu-item menu-item-type-post_type menu-item-object-loan menu-item-486 nav-item"><a title="Loan Program Details" href="loan-details.html" class="dropdown-item">Loan Program Details</a></li>
+</ul>
+</li>
+<li id="menu-item-422" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children dropdown active menu-item-422 nav-item"><a title="About Us" href="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-422">About Us</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-422" role="menu">
+	<li id="menu-item-421" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-421 nav-item"><a title="History &amp; Fidelity" href="about.html" class="dropdown-item">History &#038; Fidelity</a></li>
+	<li id="menu-item-496" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-496 nav-item"><a title="Management" href="team.html" class="dropdown-item">Management</a></li>
+	<li id="menu-item-509" class="menu-item menu-item-type-post_type menu-item-object-management menu-item-509 nav-item"><a title="Management Details" href="team.html-post/michael-anderson/" class="dropdown-item">Management Details</a></li>
+	<li id="menu-item-540" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-534 current_page_item active menu-item-540 nav-item"><a title="Calculate Mortgage" href="calculator.html" class="dropdown-item">Calculate Mortgage</a></li>
+	<li id="menu-item-514" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-514 nav-item"><a title="Career" href="about.html" class="dropdown-item">Career</a></li>
+	<li id="menu-item-515" class="menu-item menu-item-type-post_type menu-item-object-career menu-item-515 nav-item"><a title="Career Details" href="about.html-post/mortgage-loan-officer/" class="dropdown-item">Career Details</a></li>
+</ul>
+</li>
+<li id="menu-item-418" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-418 nav-item"><a title="Pages" href="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-418">Pages</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-418" role="menu">
+	<li id="menu-item-419" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-419 nav-item"><a title="FAQ’s" href="faqs.html" class="dropdown-item">FAQ’s</a></li>
+	<li id="menu-item-420" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-420 nav-item"><a title="Privacy Policy" href="privacy-policy.html" class="dropdown-item">Privacy Policy</a></li>
+	<li id="menu-item-426" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-426 nav-item"><a title="Terms and Conditions" href="terms-and-conditions.html" class="dropdown-item">Terms and Conditions</a></li>
+</ul>
+</li>
+<li id="menu-item-752" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-752 nav-item"><a title="Shop" href="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-752">Shop</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-752" role="menu">
+	<li id="menu-item-756" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-756 nav-item"><a title="Products" href="loan-programs.html" class="dropdown-item">Products</a></li>
+	<li id="menu-item-777" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-777 nav-item"><a title="Product Details" href="loan-details.html" class="dropdown-item">Product Details</a></li>
+	<li id="menu-item-753" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-753 nav-item"><a title="My Account" href="apply.html" class="dropdown-item">My Account</a></li>
+	<li id="menu-item-754" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-754 nav-item"><a title="Checkout" href="apply.html" class="dropdown-item">Checkout</a></li>
+	<li id="menu-item-755" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-755 nav-item"><a title="Cart" href="calculator.html" class="dropdown-item">Cart</a></li>
+</ul>
+</li>
+<li id="menu-item-456" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-456 nav-item"><a title="Blog" href="#" data-hover="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-456">Blog</a>
+<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-456" role="menu">
+	<li id="menu-item-13" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13 nav-item"><a title="Blog" href="blog.html" class="dropdown-item">Blog</a></li>
+	<li id="menu-item-457" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-457 nav-item"><a title="Blog Details" href="index.htmlchatgpt-frenzy-sweeps-china-as-firms-as-that-scramble-home-grown/" class="dropdown-item">Blog Details</a></li>
+</ul>
+</li>
+<li id="menu-item-436" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-436 nav-item"><a title="Contact Us" href="contact.html" class="nav-link">Contact Us</a></li>
+</ul>                    </div>
 
-              <!-- Down Payment ($ and %) -->
-              <div class="calc-group">
-                <div class="calc-group-header">
-                  <label class="calc-label" for="calcDownAmt">Down Payment Amount ($ and %)</label>
-                </div>
-                <div class="calc-input-row">
-                  <input type="number" id="calcDownAmt" class="calc-text-input" value="90000" step="1000" style="width: 60%;">
-                  <input type="number" id="calcDownPct" class="calc-text-input" value="20" min="0" max="100" step="0.5" style="width: 40%;">
-                  <span class="calc-unit-tag">%</span>
-                </div>
-                <input type="range" id="calcDownSlider" class="range-slider" min="3" max="50" step="0.5" value="20" style="margin-top: 10px;">
-              </div>
+                                            <ul class="others-options ps-0 mb-0 list-unstyled justify-content-end">
+                                                            <li>
+                                    <a href=" calculator.html" target="_blank" class="btn btn-primary elementor-repeater-item-c252f5b">
+                                        Apply Now                                    </a>
+                                </li>
+                                                                                    </ul>
+                                    </div>
+            </nav>
+               
 
-              <!-- Rate -->
-              <div class="calc-group">
-                <div class="calc-group-header">
-                  <label class="calc-label" for="calcRate">Annual Interest Rate (%)</label>
-                </div>
-                <div class="calc-input-row">
-                  <input type="number" id="calcRate" class="calc-text-input" value="6.375" step="0.05" min="2" max="15">
-                  <span class="calc-unit-tag">% APR</span>
-                </div>
-                <input type="range" id="calcRateSlider" class="range-slider" min="3" max="10" step="0.05" value="6.375" style="margin-top: 10px;">
-              </div>
-
-              <!-- Term Duration -->
-              <div class="calc-group">
-                <label class="calc-label" style="display:block; margin-bottom: 8px;">Loan Term Duration</label>
-                <div class="term-btn-group">
-                  <button type="button" class="btn-term-select calc-term-btn active" data-years="30">30 Years</button>
-                  <button type="button" class="btn-term-select calc-term-btn" data-years="20">20 Years</button>
-                  <button type="button" class="btn-term-select calc-term-btn" data-years="15">15 Years</button>
-                </div>
-              </div>
-
-              <!-- Property Taxes, Home Insurance & HOA -->
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px;">
-                <div class="calc-group">
-                  <label class="calc-label" for="calcTaxAnnual">Annual Property Taxes ($)</label>
-                  <input type="number" id="calcTaxAnnual" class="calc-text-input" value="5400" step="100">
-                </div>
-                <div class="calc-group">
-                  <label class="calc-label" for="calcInsAnnual">Annual Home Insurance ($)</label>
-                  <input type="number" id="calcInsAnnual" class="calc-text-input" value="1350" step="50">
-                </div>
-              </div>
-              <div class="calc-group">
-                <label class="calc-label" for="calcHoaMonthly">Monthly HOA / Condo Dues ($)</label>
-                <input type="number" id="calcHoaMonthly" class="calc-text-input" value="0" step="10">
-              </div>
-            </div>
-
-            <!-- Results Column -->
-            <div class="calc-results-col">
-              <h3>Monthly Payment Breakdown</h3>
-              
-              <div class="monthly-payment-display">
-                <div class="sub-label">Estimated Monthly Payment</div>
-                <div class="main-val" id="totalMonthlyPayment">$2,809</div>
-                <div class="per-mo">Principal, Interest, Taxes &amp; Insurance</div>
-              </div>
-
-              <!-- SVG Donut Chart -->
-              <div class="chart-container">
-                <svg class="chart-svg" viewBox="0 0 100 100">
-                  <circle cx="50" cy="50" r="40" fill="transparent" stroke="#F1F5EF" stroke-width="16"/>
-                  <circle id="segPI" cx="50" cy="50" r="40" fill="transparent" stroke="#1B382B" stroke-width="16" stroke-dasharray="160 91" stroke-dashoffset="0"/>
-                  <circle id="segTax" cx="50" cy="50" r="40" fill="transparent" stroke="#6BA32C" stroke-width="16" stroke-dasharray="45 206" stroke-dashoffset="-160"/>
-                  <circle id="segIns" cx="50" cy="50" r="40" fill="transparent" stroke="#285441" stroke-width="16" stroke-dasharray="25 226" stroke-dashoffset="-205"/>
-                  <circle id="segPMI" cx="50" cy="50" r="40" fill="transparent" stroke="#A0CE5B" stroke-width="16" stroke-dasharray="0 251" stroke-dashoffset="-230"/>
-                </svg>
-              </div>
-
-              <!-- Legend -->
-              <div class="breakdown-legend">
-                <div class="legend-item">
-                  <div class="legend-info">
-                    <span class="legend-dot dot-pi"></span>
-                    <span>Principal &amp; Interest</span>
-                  </div>
-                  <span class="legend-val" id="piMonthly">$2,246</span>
-                </div>
-                <div class="legend-item">
-                  <div class="legend-info">
-                    <span class="legend-dot dot-tax"></span>
-                    <span>Property Taxes</span>
-                  </div>
-                  <span class="legend-val" id="taxMonthly">$450</span>
-                </div>
-                <div class="legend-item">
-                  <div class="legend-info">
-                    <span class="legend-dot dot-ins"></span>
-                    <span>Homeowners Insurance</span>
-                  </div>
-                  <span class="legend-val" id="insMonthly">$113</span>
-                </div>
-                <div class="legend-item">
-                  <div class="legend-info">
-                    <span class="legend-dot dot-pmi"></span>
-                    <span>Mortgage Insurance (PMI)</span>
-                  </div>
-                  <span class="legend-val" id="pmiMonthly">$0</span>
-                </div>
-                <div class="legend-item">
-                  <div class="legend-info">
-                    <span class="legend-dot" style="background:#555;"></span>
-                    <span>HOA / Dues</span>
-                  </div>
-                  <span class="legend-val" id="hoaMonthly">$0</span>
-                </div>
-              </div>
-
-              <!-- Lifetime Stats -->
-              <div class="calc-summary-stats">
-                <div class="stat-tile">
-                  <span>Financed Loan Amount</span>
-                  <strong id="statTotalLoanAmt">$360,000</strong>
-                </div>
-                <div class="stat-tile">
-                  <span>Total Interest Paid</span>
-                  <strong id="statTotalInterest">$448,720</strong>
-                </div>
-                <div class="stat-tile">
-                  <span>Total Lifetime Cost</span>
-                  <strong id="statTotalCost">$1,011,240</strong>
-                </div>
-                <div class="stat-tile">
-                  <span>Loan Payoff Year</span>
-                  <strong id="statPayoffDate">2056</strong>
-                </div>
-              </div>
-
-              <button type="button" class="btn btn-primary" id="btnPreQualWithTerms" style="width: 100%;">
-                Pre-Qualify With These Calculated Terms &rarr;
-              </button>
-            </div>
-          </div>
-
-          <!-- Amortization Schedule Table -->
-          <div class="amortization-wrapper">
-            <div class="amortization-toggle-bar">
-              <div>
-                <h3 style="font-size: 1.3rem; margin-bottom: 4px;">Detailed Amortization Table</h3>
-                <p style="font-size: 0.88rem; color: var(--muted); margin: 0;">View principal reduction versus interest across each annual cycle.</p>
-              </div>
-              <div style="display: flex; gap: 8px;">
-                <button type="button" class="btn btn-outline btn-sm active" id="amortToggleAnnual">Annual View</button>
-                <button type="button" class="btn btn-outline btn-sm" id="amortToggleMonthly">Monthly View</button>
-                <button type="button" class="btn btn-dark btn-sm" onclick="window.print()">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
-                  Print Schedule
+        <!-- Start Mobile Navbar Area -->
+        <div class="mobile-navbar offcanvas offcanvas-end border-0 " data-bs-backdrop="static" tabindex="-1" id="navbarOffcanvas">
+            <div class="offcanvas-header">
+                                    <a class="logo d-inline-block" href="index.html">
+                        <img src="images/ralo/ralo-black.png" alt="Ralo">
+                    </a>
+                
+                <button type="button" class="close-btn bg-transparent position-relative lh-1 p-0 border-0" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="ri-close-fill"></i>
                 </button>
-              </div>
             </div>
 
-            <div class="table-responsive">
-              <table class="amort-table">
-                <thead>
-                  <tr>
-                    <th>Period</th>
-                    <th>Payment Total</th>
-                    <th>Principal Paid</th>
-                    <th>Interest Paid</th>
-                    <th>Total Interest to Date</th>
-                    <th>Remaining Balance</th>
-                  </tr>
-                </thead>
-                <tbody id="amortTableBody">
-                  <!-- Generated via calculator.js -->
-                </tbody>
-              </table>
+            <div class="offcanvas-body">
+                <ul id="menu-primary-menu-1" class="responsive-menu mobile-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-200"><a href="#">Home</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-14"><a href="index.html">Home One</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-199"><a href="home-two.html">Home Two</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-274"><a href="index.html">Home Three</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-487"><a href="#">Loan Program</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-479"><a href="loan-programs.html">Loan Program</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-loan menu-item-486"><a href="loan-details.html">Loan Program Details</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-422"><a href="#">About Us</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-421"><a href="about.html">History &#038; Fidelity</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-496"><a href="team.html">Management</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-management menu-item-509"><a href="team.html-post/michael-anderson/">Management Details</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-534 current_page_item menu-item-540"><a href="calculator.html" aria-current="page">Calculate Mortgage</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-514"><a href="about.html">Career</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-career menu-item-515"><a href="about.html-post/mortgage-loan-officer/">Career Details</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-418"><a href="#">Pages</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-419"><a href="faqs.html">FAQ’s</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-420"><a rel="privacy-policy" href="privacy-policy.html">Privacy Policy</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-426"><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-752"><a href="#">Shop</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-756"><a href="loan-programs.html">Products</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-777"><a href="loan-details.html">Product Details</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-753"><a href="apply.html">My Account</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-754"><a href="apply.html">Checkout</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-755"><a href="calculator.html">Cart</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-456"><a href="#">Blog</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13"><a href="blog.html">Blog</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-457"><a href="index.htmlchatgpt-frenzy-sweeps-china-as-firms-as-that-scramble-home-grown/">Blog Details</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-436"><a href="contact.html">Contact Us</a></li>
+</ul>            </div>
+        </div>
+
+
+        				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+				</header>
+
+
+			<div class="page-banner-area bg-gray2">
+            <div class="container mw-1380">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="page-banner-content">
+																						 	<ul class="ps-0 list-unstyled breadcrumbs">
+									<li><a href="index.html">Home</a></li>
+									<li>Calculate Mortgage</li>
+								</ul>
+							
+															<h1>Mortgage Miracles: Transforming Dreams into Dwellings in the Real Estate Universe </h1>
+							
+							                            	<p>We truly care about what is best for you! From pre-approval to closing, our goal is to provide you with the best service while saving you money. We provide a completely customized experience, and will find the right loan program and best terms for you.</p>
+							
+							                            <a href="loan-programs.html" class="read-more text-primary">
+								View All Program Loans                                <i class="flaticon-right-arrow"></i>
+                            </a>
+							                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="page-banner-img text-center text-lg-end position-relative z-1">
+							                            	<img src="images/ralo/banner-img-5.jpg" class="img" alt="banner-img">
+							
+															<img src="images/ralo/shape-7.png" class="shape shape-7" alt="Shape1">
+																						<img src="images/ralo/shape-8.png" class="shape shape-8" alt="Shape2">
+							                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
+			<div class="page-area ">
+																						
+<div id="post-534" class="post-534 page type-page status-publish hentry">
+	<div class="entry-content">
+				<div   class="elementor elementor-534">
+						<div class="elementor-section elementor-top-section elementor-element elementor-element-9652826 elementor-section-full_width elementor-section-height-default elementor-section-height-default"  >
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9dc13e2"  >
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-c33fb1c elementor-widget elementor-widget-Ralo_MortgageCalculator"   >
+				<div class="elementor-widget-container">
+					
+        <div class="calculate-area ptb-130">
+            <div class="container mw-1380">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 ps-lg-0">
+                        <div class="calculate-form bg-gray2">
+                            <h3>Calculate your Mortgage</h3>
+                            <form method="post" autocomplete="off">
+                                <div class="form-group">
+                                    <label for="total-amount">Total Amount</label>
+
+                                    <input type="number" name="total_amount" id="total-amount" class="form-control" required="required" min=0 oninput="validity.valid||(value='');" placeholder="30,000$">
+                                </div>
+                                <div class="form-group">
+                                    <label for="interest-rate">Interest Rate</label>
+
+                                    <input type="number" step=0.001 name="interest_rate" id="interest-rate" class="form-control" required="required" min=0 oninput="validity.valid||(value='');" placeholder="4%">
+                                </div>
+                                <div class="form-group">
+                                    <label for="down-payment">Down Payment</label>
+
+                                    <input type="number" name="downpayment" id="down-payment" class="form-control" required="required" min=0 oninput="validity.valid||(value='');" placeholder="6,000$">
+                                </div>
+                                <div class="form-group">
+                                    <label for="mortgage-period">Mortgage Period</label>
+
+                                    <input type="number" name="mortgage_period" id="mortgage-period" class="form-control" required="required" min=1 oninput="validity.valid||(value='');" placeholder="30">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" name="mortgagesubmit" class="btn border-0"> Calculate Mortgage </button>
+                                </div>
+                            
+                <div id="calc-result-box" class="result-box" style="margin-top:20px; padding:18px 24px; background:#426900; color:#fff; border-radius:8px; display:flex; justify-content:space-between; align-items:center;">
+                    <div>
+                        <h4 style="margin:0; color:#fff; font-size:16px;">Estimated Monthly Note:</h4>
+                        <div style="font-size:12px; opacity:0.85;">Principal &amp; Interest</div>
+                    </div>
+                    <div id="monthly-result-val" style="font-size:26px; font-weight:700;">$143</div>
+                </div>
+                </form>
+                        </div>
+                    </div>
+                </div>
+
+                            </div>
+        </div>
+        				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</div>
+				</div>
+			</div><!-- .entry-content -->
 
-    <!-- FAQ MINI SECTION -->
-    <section class="section-sm" style="background: var(--light-bg); border-top: 1px solid var(--border-color);">
-      <div class="container">
-        <div class="section-header">
-          <h2>Mortgage Calculation Questions</h2>
-          <p>Key financial terms explained to help you maximize your savings.</p>
-        </div>
-        <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px;">
-          <div style="background: var(--white); padding: 20px; border-radius: 8px; border: 1px solid var(--border-color);">
-            <strong style="color: var(--dark); display: block; margin-bottom: 6px;">How is monthly principal and interest calculated?</strong>
-            <p style="font-size: 0.92rem; color: var(--body-text); margin: 0;">We use the standard institutional amortization formula: \(M = P \frac{r(1+r)^n}{(1+r)^n - 1}\) where \(P\) is the principal loan amount, \(r\) is the monthly interest rate, and \(n\) is the total number of monthly payments.</p>
-          </div>
-          <div style="background: var(--white); padding: 20px; border-radius: 8px; border: 1px solid var(--border-color);">
-            <strong style="color: var(--dark); display: block; margin-bottom: 6px;">What triggers Private Mortgage Insurance (PMI)?</strong>
-            <p style="font-size: 0.92rem; color: var(--body-text); margin: 0;">On conventional loans, putting down less than 20% requires PMI to protect the lender against default. Once your loan balance reaches 80% of your property's value, PMI is automatically cancelled.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+	</div><!-- #post-534 -->
+														</div>
+	
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container-wide">
-      <div class="footer-bottom">
-        <div>&copy; 2026 Mortgage Broker LLC. All rights reserved. Equal Housing Lender.</div>
-        <div class="footer-bottom-links">
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="terms-and-conditions.html">Terms of Use</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+					<button type="button" id="backtotop">
+				<i class="ri-upload-line"></i>
+			</button>
+		
+		
+<footer   id="colophon" role="contentinfo">
+			<div class='footer-width-fixer'>		<div   class="elementor elementor-1091">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-1de12e5 footer-area pt-130 pb-105 border border-top-0 elementor-section-boxed elementor-section-height-default elementor-section-height-default"  >
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-01de39c"  >
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-aee223f elementor-widget elementor-widget-RaloFooterNewsletter"   >
+				<div class="elementor-widget-container">
+					
+                    <form class="mailchimp subscribe-content" method="post">
+                <div class="d-flex align-items-center justify-content-center flex-wrap gap-4">
+                    <span>Enter your email here</span>
+
+                    <input type="email" class=" memail form-control" placeholder="Email" name="EMAIL" required>
+                    <button type="submit" class="btn border-0">Subscribe Now</button>
+
+                    <div class="mchimp-errmessage alert alert-danger" style="display: none;"></div>
+                    <div class="mchimp-sucmessage alert alert-primary" style="display: none;"></div>
+                </div>
+            
+                <div id="calc-result-box" class="result-box" style="margin-top:20px; padding:18px 24px; background:#426900; color:#fff; border-radius:8px; display:flex; justify-content:space-between; align-items:center;">
+                    <div>
+                        <h4 style="margin:0; color:#fff; font-size:16px;">Estimated Monthly Note:</h4>
+                        <div style="font-size:12px; opacity:0.85;">Principal &amp; Interest</div>
+                    </div>
+                    <div id="monthly-result-val" style="font-size:26px; font-weight:700;">$143</div>
+                </div>
+                </form>
+        
+        <script>
+            ;(function($){
+                "use strict";
+                $(document).ready(function () {
+                    // MAILCHIMP
+                    $(".mailchimp").ajaxChimp({
+                        callback: mailchimpCallback,
+                        url: "#"
+                    });
+                    $(".memail").on("focus", function () {
+                        $(".mchimp-errmessage").fadeOut();
+                        $(".mchimp-sucmessage").fadeOut();
+                    });
+                    $(".memail").on("keydown", function () {
+                        $(".mchimp-errmessage").fadeOut();
+                        $(".mchimp-sucmessage").fadeOut();
+                    });
+                    $(".memail").on("click", function () {
+                        $(".memail").val("");
+                    });
+
+                    function mailchimpCallback(resp) {
+                        if (resp.result === "success") {
+                            $(".mchimp-sucmessage").html(resp.msg).fadeIn(1000);
+                            $(".mchimp-sucmessage").fadeOut(3000);
+                        } else if (resp.result === "error") {
+                            $(".mchimp-errmessage").html(resp.msg).fadeIn(1000);
+                        }
+                    }
+                });
+            })(jQuery)
+        </script>
+        				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-4c6e1a5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"  >
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-698ddad footer-single-item"  >
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5e7fe3a elementor-widget elementor-widget-image"   >
+				<div class="elementor-widget-container">
+															<img width="118" height="38" src="images/ralo/ralo-black.png" class="attachment-full size-full wp-image-686" alt="" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-22caa49 elementor-widget elementor-widget-text-editor"   >
+				<div class="elementor-widget-container">
+									<p class="p">With a rich history spanning decades, our club has become a symbol of excellence in the golfing community. offers a challenging yet rewarding game play.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-f15a2b8 elementor-widget elementor-widget-RaloSocialIcon"   >
+				<div class="elementor-widget-container">
+					        <ul class="ps-0 mb-0 list-unstyled d-flex gap-4 flex-wrap social-link">
+                    
+                <li>
+                    <a target="_blank" href="#"> 
+                                                    <i class="ri-facebook-fill"></i>
+                                            </a>
+                </li>
+                    
+                <li>
+                    <a target="_blank" href="#"> 
+                                                    <i class="ri-twitter-x-line"></i>
+                                            </a>
+                </li>
+                    
+                <li>
+                    <a target="_blank" href="#"> 
+                                                    <i class="ri-linkedin-fill"></i>
+                                            </a>
+                </li>
+                    
+                <li>
+                    <a target="_blank" href="#"> 
+                                                    <i class="ri-instagram-line"></i>
+                                            </a>
+                </li>
+                    </ul>
+
+        				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-9540614"  >
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-8676b91 elementor-widget__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-Ralo_FooterLinks"   >
+				<div class="elementor-widget-container">
+					        <div class="footer-single-item">
+            <h3>Quick Links</h3>
+            <ul class="ps-0 mb-0 list-unstyled additional-link">
+                                    <li>
+                        <a href="about.html">
+                            About Us                        </a>
+                    </li>
+                                    <li>
+                        <a href="contact.html">
+                            Contact Us                        </a>
+                    </li>
+                                    <li>
+                        <a href="blog.html">
+                            Blog                        </a>
+                    </li>
+                                    <li>
+                        <a href="faqs.html">
+                            FAQ&#039;s                        </a>
+                    </li>
+                                    <li>
+                        <a href="about.html">
+                            Career                        </a>
+                    </li>
+                            </ul>
+        </div>
+
+        				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-21608f6"  >
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-b8c232c elementor-widget__width-initial elementor-widget elementor-widget-Ralo_FooterLinks"   >
+				<div class="elementor-widget-container">
+					        <div class="footer-single-item">
+            <h3>Services</h3>
+            <ul class="ps-0 mb-0 list-unstyled additional-link">
+                                    <li>
+                        <a href="loan-details.html">
+                            Apartment &amp; Commercial                        </a>
+                    </li>
+                                    <li>
+                        <a href="loan-details.html">
+                            Reverse Mortgage                        </a>
+                    </li>
+                                    <li>
+                        <a href="loan-details.html">
+                            Home Buyer’s Guide                        </a>
+                    </li>
+                                    <li>
+                        <a href="loan-details.html">
+                            Mortgage Home Loans                        </a>
+                    </li>
+                            </ul>
+        </div>
+
+        				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-afc2062"  >
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-83d7072 elementor-widget__width-initial elementor-widget elementor-widget-Ralo_FooterLinks"   >
+				<div class="elementor-widget-container">
+					        <div class="footer-single-item">
+            <h3>Company</h3>
+            <ul class="ps-0 mb-0 list-unstyled additional-link">
+                                    <li>
+                        <a href="terms-and-conditions.html">
+                            Terms &amp; Condition                        </a>
+                    </li>
+                                    <li>
+                        <a href="privacy-policy.html">
+                            Privacy Policy                        </a>
+                    </li>
+                                    <li>
+                        <a href="calculator.html">
+                            Calculate Mortgage                        </a>
+                    </li>
+                                    <li>
+                        <a href="about.html">
+                            History &amp; Fidelity                        </a>
+                    </li>
+                            </ul>
+        </div>
+
+        				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-982bc33"  >
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-483f4d1 elementor-widget elementor-widget-Ralo_Footer_ContactInfo"   >
+				<div class="elementor-widget-container">
+					
+                    <div class="footer-single-item">
+                <h3>Our Contact</h3>
+                <ul class="ps-0 mb-0 list-unstyled info-links">
+                                            <li class="d-flex align-items-center">
+                            <i class="ri-mail-line"></i>
+                                <a href="/cdn-cgi/l/email-protection#39515c5555564b585556795e54585055175a5654">helloralo@gmail.com</a>                        </li>
+                                            <li class="d-flex align-items-center">
+                            <i class="ri-phone-fill"></i>
+                            <a href="tel:+487432602396">+48 74326 02396</a>                        </li>
+                                            <li class="d-flex align-items-center">
+                            <i class="ri-phone-fill"></i>
+                              <a href="tel:+486445396533">+48 64453 96533</a>                        </li>
+                                            <li class="d-flex align-items-center">
+                            <i class="  ri-calendar-2-line"></i>
+                              <span>Mon - Fri 12:00 - 18:00</span>                        </li>
+                                            <li class="d-flex align-items-center">
+                            <i class="ri-map-pin-line"></i>
+                              <span>Hilton, TY56/90 NY, USA</span>                        </li>
+                                    </ul>
+            </div>
+                				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-237fd8d elementor-section-full_width elementor-section-height-default elementor-section-height-default"  >
+						<div class="elementor-container elementor-column-gap-no">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-30f1f65"  >
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-97a15d3 elementor-widget elementor-widget-text-editor"   >
+				<div class="elementor-widget-container">
+									<div class="copy-right-area"><div class="container"><div class="copy-right-content"><p class="mb-0">© Ralo. All Rights Reserved by <a href="https://envytheme.com/" target="_blank" rel="noopener">EnvyTheme</a></p></div></div></div>								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		</div>		</footer>
 
-  <script src="js/main.js"></script>
-  <script src="js/calculator.js"></script>
+    <!-- JavaScript Vendor & Custom Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
