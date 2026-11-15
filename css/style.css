@@ -25250,3 +25250,18 @@ select#findus, select#ourloc {
   top: 0;
 }
 /* === End of css/vendor/ralo-blog.css === */
+
+/* Footer Logo Link */
+.footer-logo-link {
+    display: inline-block;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+.footer-logo-link:hover {
+    opacity: 0.85;
+    transform: translateY(-1px);
+}
+.navbar-brand img,
+.footer-logo-link img {
+    object-fit: contain;
+}

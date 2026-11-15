@@ -10,22 +10,20 @@
   - **Primary Live Site:** [https://pixel-force.github.io/Mortgage-Broker/](https://pixel-force.github.io/Mortgage-Broker/) (HTTP 200 OK - Active & Verified)
   - **Mirror Site:** [https://penta-websites.github.io/Mortgage-Broker/](https://penta-websites.github.io/Mortgage-Broker/) (Configured on `gh-pages` and `main`)
 
-## 2. WordPress Footprint Removal & Clean-Up (Completed)
-- **Removal of "Reserved by EnvyTheme":**
-  - Removed all occurrences of `Reserved by EnvyTheme` and `envytheme.com` across all 16 HTML pages.
-  - Replaced with clean copyright notice: `© Mortgage Broker. All Rights Reserved.`
-- **Removal of All WordPress / Elementor Attributes & Data:**
-  - Completely stripped all `data-elementor-type`, `data-elementor-id`, `data-widget_type`, `data-id`, `data-settings`, `data-element_type`, and `data-model-cid` attributes.
-  - Stripped all `wp-` classes (`wp-custom-logo`, `wp-theme-ralo`, `wp-image-*`, `wp-post-image`, `wp-singular`, `wp-comment-cookies-consent`, `wp-block-heading`, `wp-block-list`).
-  - Removed all WordPress form action endpoints (`index.htmlwp-comments-post.php`) and replaced with client-side interactive handlers.
-  - Removed theme-specific plugin widget classes (`elementor-widget-Ralo*`).
-  - Cleaned all `alt="Ralo"` and `title="Ralo"` tags into `alt="Mortgage Broker"` and `title="Mortgage Broker"`.
-- **Decoupled Media Structure:**
-  - Migrated and cleaned all graphic assets from `images/ralo/` to `images/media/`.
-  - Deleted legacy `images/ralo/` folder so no theme name footprint exists in network requests or file inspector.
+## 2. Branding & Logo Updates (Completed)
+- **Header Logo Update:**
+  - Replaced legacy `ralo-black.png` logo with official vector `images/logo.svg` across all 16 template pages.
+  - Updated desktop (`.black-logo`), mobile (`.m-logo`), and offcanvas drawer (`.logo`) navbar logos.
+- **Clickable Footer Logo:**
+  - Replaced footer logo with `images/logo.svg`.
+  - Wrapped footer logo in an anchor tag linking to `index.html` (`.footer-logo-link`) so it is fully clickable with smooth hover states across all 16 pages.
+- **WordPress Footprint Removal:**
+  - Removed all `Reserved by EnvyTheme` text and external links, replaced with `© Mortgage Broker. All Rights Reserved.`
+  - Completely stripped all `data-elementor-*`, `data-widget_type`, `wp-*`, and WordPress comments/endpoints.
+  - Zero traces of WordPress, Elementor runtime clutter, or theme creator links remain.
 
 ## 3. Production-Ready HTML5 Page Suite (16 Complete Pages)
-1. `index.html` — Homepage One (Hero Slider, Client Logos, 4 Service Cards, Calculator with Feature Showcase, Loan Options Carousel, 3-Step Process, Stats Counters, Video Modal, Team Roster, Reviews & Testimonials Carousel, Latest Blog, Pre-Footer CTA, and 4-Column Footer).
+1. `index.html` — Homepage One (Hero Slider, Client Logos, 4 Service Cards, Calculator with Feature Showcase, Loan Options Carousel, 3-Step Process, Stats Counters, Video Modal, Team Roster, Reviews & Testimonials Carousel, Latest Blog, Pre-Footer CTA, and 4-Column Footer with Clickable Logo).
 2. `home-two.html` — Homepage Two (Alternative Layout).
 3. `home-three.html` — Homepage Three (Modern Alternative Layout).
 4. `about.html` — About Us (Company History, Values, and Leadership).
