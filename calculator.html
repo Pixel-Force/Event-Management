@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mortgage Calculator — Mortgage Broker | Payments &amp; Amortization Schedule</title>
+  <meta name="description" content="Calculate your true monthly mortgage payment including principal, interest, taxes, insurance, and PMI. Generate full lifetime amortization schedules.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Info Bar -->
+  <div class="top-bar">
+    <div class="container-wide top-bar-inner">
+      <div class="top-bar-left">
+        <span class="badge-nmls">NMLS #1849204</span>
+        <div class="top-info-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <a href="tel:+18005552345">(800) 555-2345</a>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <a href="apply.html" style="color:var(--accent-light); font-weight:600;">Check Pre-Approval &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container-wide">
+      <nav class="navbar">
+        <a href="index.html" class="nav-brand">
+          <img src="images/logo.svg" alt="Mortgage Broker Logo">
+        </a>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="loan-programs.html" class="nav-link">Loan Programs</a></li>
+          <li class="nav-item"><a href="calculator.html" class="nav-link active">Mortgage Calculator</a></li>
+          <li class="nav-item"><a href="apply.html" class="nav-link">Apply Online</a></li>
+          <li class="nav-item"><a href="team.html" class="nav-link">Our Team</a></li>
+          <li class="nav-item"><a href="faqs.html" class="nav-link">Resources</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="apply.html" class="btn btn-primary">Start Pre-Approval</a>
+          <button type="button" class="mobile-nav-toggle" aria-label="Open mobile menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="mobile-drawer-head">
+      <img src="images/logo.svg" alt="Mortgage Broker">
+      <button type="button" class="btn-drawer-close">&times;</button>
+    </div>
+    <div class="mobile-drawer-menu">
+      <div class="mobile-menu-item"><a href="index.html" class="mobile-menu-link">Home</a></div>
+      <div class="mobile-menu-item"><a href="about.html" class="mobile-menu-link">About Us</a></div>
+      <div class="mobile-menu-item"><a href="loan-programs.html" class="mobile-menu-link">Loan Programs</a></div>
+      <div class="mobile-menu-item"><a href="calculator.html" class="mobile-menu-link">Mortgage Calculator</a></div>
+      <div class="mobile-menu-item"><a href="apply.html" class="mobile-menu-link">Apply Online</a></div>
+      <div class="mobile-menu-item"><a href="team.html" class="mobile-menu-link">Our Team</a></div>
+      <div class="mobile-menu-item"><a href="contact.html" class="mobile-menu-link">Contact</a></div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>Precision Mortgage Calculator &amp; Amortization Suite</h1>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="divider">/</span>
+          <span>Mortgage Calculator</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALCULATOR SUITE COMPONENT -->
+    <section class="section">
+      <div class="container">
+        <div class="calc-container-card">
+          <div class="calc-grid">
+            <!-- Inputs Column -->
+            <div class="calc-inputs-col">
+              <h3>Loan &amp; Property Parameters</h3>
+
+              <!-- Price -->
+              <div class="calc-group">
+                <div class="calc-group-header">
+                  <label class="calc-label" for="calcHomePrice">Home Purchase Price ($)</label>
+                </div>
+                <div class="calc-input-row">
+                  <input type="number" id="calcHomePrice" class="calc-text-input" value="450000" min="50000" max="2500000" step="5000">
+                  <span class="calc-unit-tag">USD</span>
+                </div>
+                <input type="range" id="calcPriceSlider" class="range-slider" min="100000" max="1500000" step="5000" value="450000" style="margin-top: 10px;">
+              </div>
+
+              <!-- Down Payment ($ and %) -->
+              <div class="calc-group">
+                <div class="calc-group-header">
+                  <label class="calc-label" for="calcDownAmt">Down Payment Amount ($ and %)</label>
+                </div>
+                <div class="calc-input-row">
+                  <input type="number" id="calcDownAmt" class="calc-text-input" value="90000" step="1000" style="width: 60%;">
+                  <input type="number" id="calcDownPct" class="calc-text-input" value="20" min="0" max="100" step="0.5" style="width: 40%;">
+                  <span class="calc-unit-tag">%</span>
+                </div>
+                <input type="range" id="calcDownSlider" class="range-slider" min="3" max="50" step="0.5" value="20" style="margin-top: 10px;">
+              </div>
+
+              <!-- Rate -->
+              <div class="calc-group">
+                <div class="calc-group-header">
+                  <label class="calc-label" for="calcRate">Annual Interest Rate (%)</label>
+                </div>
+                <div class="calc-input-row">
+                  <input type="number" id="calcRate" class="calc-text-input" value="6.375" step="0.05" min="2" max="15">
+                  <span class="calc-unit-tag">% APR</span>
+                </div>
+                <input type="range" id="calcRateSlider" class="range-slider" min="3" max="10" step="0.05" value="6.375" style="margin-top: 10px;">
+              </div>
+
+              <!-- Term Duration -->
+              <div class="calc-group">
+                <label class="calc-label" style="display:block; margin-bottom: 8px;">Loan Term Duration</label>
+                <div class="term-btn-group">
+                  <button type="button" class="btn-term-select calc-term-btn active" data-years="30">30 Years</button>
+                  <button type="button" class="btn-term-select calc-term-btn" data-years="20">20 Years</button>
+                  <button type="button" class="btn-term-select calc-term-btn" data-years="15">15 Years</button>
+                </div>
+              </div>
+
+              <!-- Property Taxes, Home Insurance & HOA -->
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px;">
+                <div class="calc-group">
+                  <label class="calc-label" for="calcTaxAnnual">Annual Property Taxes ($)</label>
+                  <input type="number" id="calcTaxAnnual" class="calc-text-input" value="5400" step="100">
+                </div>
+                <div class="calc-group">
+                  <label class="calc-label" for="calcInsAnnual">Annual Home Insurance ($)</label>
+                  <input type="number" id="calcInsAnnual" class="calc-text-input" value="1350" step="50">
+                </div>
+              </div>
+              <div class="calc-group">
+                <label class="calc-label" for="calcHoaMonthly">Monthly HOA / Condo Dues ($)</label>
+                <input type="number" id="calcHoaMonthly" class="calc-text-input" value="0" step="10">
+              </div>
+            </div>
+
+            <!-- Results Column -->
+            <div class="calc-results-col">
+              <h3>Monthly Payment Breakdown</h3>
+              
+              <div class="monthly-payment-display">
+                <div class="sub-label">Estimated Monthly Payment</div>
+                <div class="main-val" id="totalMonthlyPayment">$2,809</div>
+                <div class="per-mo">Principal, Interest, Taxes &amp; Insurance</div>
+              </div>
+
+              <!-- SVG Donut Chart -->
+              <div class="chart-container">
+                <svg class="chart-svg" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="40" fill="transparent" stroke="#F1F5EF" stroke-width="16"/>
+                  <circle id="segPI" cx="50" cy="50" r="40" fill="transparent" stroke="#1B382B" stroke-width="16" stroke-dasharray="160 91" stroke-dashoffset="0"/>
+                  <circle id="segTax" cx="50" cy="50" r="40" fill="transparent" stroke="#6BA32C" stroke-width="16" stroke-dasharray="45 206" stroke-dashoffset="-160"/>
+                  <circle id="segIns" cx="50" cy="50" r="40" fill="transparent" stroke="#285441" stroke-width="16" stroke-dasharray="25 226" stroke-dashoffset="-205"/>
+                  <circle id="segPMI" cx="50" cy="50" r="40" fill="transparent" stroke="#A0CE5B" stroke-width="16" stroke-dasharray="0 251" stroke-dashoffset="-230"/>
+                </svg>
+              </div>
+
+              <!-- Legend -->
+              <div class="breakdown-legend">
+                <div class="legend-item">
+                  <div class="legend-info">
+                    <span class="legend-dot dot-pi"></span>
+                    <span>Principal &amp; Interest</span>
+                  </div>
+                  <span class="legend-val" id="piMonthly">$2,246</span>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-info">
+                    <span class="legend-dot dot-tax"></span>
+                    <span>Property Taxes</span>
+                  </div>
+                  <span class="legend-val" id="taxMonthly">$450</span>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-info">
+                    <span class="legend-dot dot-ins"></span>
+                    <span>Homeowners Insurance</span>
+                  </div>
+                  <span class="legend-val" id="insMonthly">$113</span>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-info">
+                    <span class="legend-dot dot-pmi"></span>
+                    <span>Mortgage Insurance (PMI)</span>
+                  </div>
+                  <span class="legend-val" id="pmiMonthly">$0</span>
+                </div>
+                <div class="legend-item">
+                  <div class="legend-info">
+                    <span class="legend-dot" style="background:#555;"></span>
+                    <span>HOA / Dues</span>
+                  </div>
+                  <span class="legend-val" id="hoaMonthly">$0</span>
+                </div>
+              </div>
+
+              <!-- Lifetime Stats -->
+              <div class="calc-summary-stats">
+                <div class="stat-tile">
+                  <span>Financed Loan Amount</span>
+                  <strong id="statTotalLoanAmt">$360,000</strong>
+                </div>
+                <div class="stat-tile">
+                  <span>Total Interest Paid</span>
+                  <strong id="statTotalInterest">$448,720</strong>
+                </div>
+                <div class="stat-tile">
+                  <span>Total Lifetime Cost</span>
+                  <strong id="statTotalCost">$1,011,240</strong>
+                </div>
+                <div class="stat-tile">
+                  <span>Loan Payoff Year</span>
+                  <strong id="statPayoffDate">2056</strong>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-primary" id="btnPreQualWithTerms" style="width: 100%;">
+                Pre-Qualify With These Calculated Terms &rarr;
+              </button>
+            </div>
+          </div>
+
+          <!-- Amortization Schedule Table -->
+          <div class="amortization-wrapper">
+            <div class="amortization-toggle-bar">
+              <div>
+                <h3 style="font-size: 1.3rem; margin-bottom: 4px;">Detailed Amortization Table</h3>
+                <p style="font-size: 0.88rem; color: var(--muted); margin: 0;">View principal reduction versus interest across each annual cycle.</p>
+              </div>
+              <div style="display: flex; gap: 8px;">
+                <button type="button" class="btn btn-outline btn-sm active" id="amortToggleAnnual">Annual View</button>
+                <button type="button" class="btn btn-outline btn-sm" id="amortToggleMonthly">Monthly View</button>
+                <button type="button" class="btn btn-dark btn-sm" onclick="window.print()">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+                  Print Schedule
+                </button>
+              </div>
+            </div>
+
+            <div class="table-responsive">
+              <table class="amort-table">
+                <thead>
+                  <tr>
+                    <th>Period</th>
+                    <th>Payment Total</th>
+                    <th>Principal Paid</th>
+                    <th>Interest Paid</th>
+                    <th>Total Interest to Date</th>
+                    <th>Remaining Balance</th>
+                  </tr>
+                </thead>
+                <tbody id="amortTableBody">
+                  <!-- Generated via calculator.js -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ MINI SECTION -->
+    <section class="section-sm" style="background: var(--light-bg); border-top: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-header">
+          <h2>Mortgage Calculation Questions</h2>
+          <p>Key financial terms explained to help you maximize your savings.</p>
+        </div>
+        <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px;">
+          <div style="background: var(--white); padding: 20px; border-radius: 8px; border: 1px solid var(--border-color);">
+            <strong style="color: var(--dark); display: block; margin-bottom: 6px;">How is monthly principal and interest calculated?</strong>
+            <p style="font-size: 0.92rem; color: var(--body-text); margin: 0;">We use the standard institutional amortization formula: \(M = P \frac{r(1+r)^n}{(1+r)^n - 1}\) where \(P\) is the principal loan amount, \(r\) is the monthly interest rate, and \(n\) is the total number of monthly payments.</p>
+          </div>
+          <div style="background: var(--white); padding: 20px; border-radius: 8px; border: 1px solid var(--border-color);">
+            <strong style="color: var(--dark); display: block; margin-bottom: 6px;">What triggers Private Mortgage Insurance (PMI)?</strong>
+            <p style="font-size: 0.92rem; color: var(--body-text); margin: 0;">On conventional loans, putting down less than 20% requires PMI to protect the lender against default. Once your loan balance reaches 80% of your property's value, PMI is automatically cancelled.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container-wide">
+      <div class="footer-bottom">
+        <div>&copy; 2026 Mortgage Broker LLC. All rights reserved. Equal Housing Lender.</div>
+        <div class="footer-bottom-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-and-conditions.html">Terms of Use</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/calculator.js"></script>
+</body>
+</html>

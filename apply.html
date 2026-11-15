@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Pre-Approval Application — Mortgage Broker | 5-Minute Wizard</title>
+  <meta name="description" content="Apply online for your mortgage pre-approval in 5 minutes with no credit score impact. Compare personalized loan programs and receive conditional approval.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Info Bar -->
+  <div class="top-bar">
+    <div class="container-wide top-bar-inner">
+      <div class="top-bar-left">
+        <span class="badge-nmls">NMLS #1849204</span>
+        <div class="top-info-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <a href="tel:+18005552345">(800) 555-2345</a>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <span style="font-size:0.82rem; color:#A2B6A8;">🔒 256-Bit SSL Encrypted Application</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container-wide">
+      <nav class="navbar">
+        <a href="index.html" class="nav-brand">
+          <img src="images/logo.svg" alt="Mortgage Broker Logo">
+        </a>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="loan-programs.html" class="nav-link">Loan Programs</a></li>
+          <li class="nav-item"><a href="calculator.html" class="nav-link">Mortgage Calculator</a></li>
+          <li class="nav-item"><a href="apply.html" class="nav-link active">Apply Online</a></li>
+          <li class="nav-item"><a href="team.html" class="nav-link">Our Team</a></li>
+          <li class="nav-item"><a href="faqs.html" class="nav-link">Resources</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <div class="phone-quick-link">
+            <div class="phone-info">
+              <span>Questions?</span>
+              <strong>(800) 555-2345</strong>
+            </div>
+          </div>
+          <button type="button" class="mobile-nav-toggle" aria-label="Open mobile menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>5-Minute Mortgage Pre-Approval Wizard</h1>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="divider">/</span>
+          <span>Online Pre-Approval</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- WIZARD SECTION -->
+    <section class="section" id="mortgageWizard">
+      <div class="container">
+        <div class="wizard-container">
+          <!-- Step Progress Nodes -->
+          <div class="wizard-steps-indicator">
+            <div class="wizard-step-node active" data-step="1">
+              <div class="step-node-circle">1</div>
+              <span>Purpose</span>
+            </div>
+            <div class="wizard-step-node" data-step="2">
+              <div class="step-node-circle">2</div>
+              <span>Budget</span>
+            </div>
+            <div class="wizard-step-node" data-step="3">
+              <div class="step-node-circle">3</div>
+              <span>Financials</span>
+            </div>
+            <div class="wizard-step-node" data-step="4">
+              <div class="step-node-circle">4</div>
+              <span>Contact &amp; Review</span>
+            </div>
+          </div>
+
+          <form id="mortgageApplicationForm">
+            <!-- STEP 1: LOAN PURPOSE & PROPERTY -->
+            <div class="wizard-step-pane active" data-step="1">
+              <h3 style="margin-bottom: 8px;">What is your primary financing goal?</h3>
+              <p style="color: var(--muted); font-size: 0.94rem; margin-bottom: 24px;">Select the purpose of this loan to see matching wholesale lending programs.</p>
+
+              <div class="choice-cards-grid">
+                <div class="choice-card selected" data-group="purpose">
+                  <div style="font-size: 1.8rem;">🏡</div>
+                  <strong>Purchase a Home</strong>
+                  <span style="font-size: 0.8rem; color: var(--muted);">Buying a new residence</span>
+                </div>
+                <div class="choice-card" data-group="purpose">
+                  <div style="font-size: 1.8rem;">📉</div>
+                  <strong>Refinance Rate</strong>
+                  <span style="font-size: 0.8rem; color: var(--muted);">Lower monthly payment</span>
+                </div>
+                <div class="choice-card" data-group="purpose">
+                  <div style="font-size: 1.8rem;">💵</div>
+                  <strong>Cash-Out Refi</strong>
+                  <span style="font-size: 0.8rem; color: var(--muted);">Tap home equity</span>
+                </div>
+                <div class="choice-card" data-group="purpose">
+                  <div style="font-size: 1.8rem;">🏢</div>
+                  <strong>Commercial / Investment</strong>
+                  <span style="font-size: 0.8rem; color: var(--muted);">Multi-unit or commercial</span>
+                </div>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="form-field">
+                  <label for="wizPropType">Property Type</label>
+                  <select id="wizPropType" required>
+                    <option value="single">Single Family Home</option>
+                    <option value="townhouse">Townhouse / Planned Unit</option>
+                    <option value="condo">Condominium</option>
+                    <option value="multi">Multi-Family (2-4 Units)</option>
+                    <option value="commercial">Commercial Property (5+ Units)</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="wizOccupancy">Intended Property Usage</label>
+                  <select id="wizOccupancy" required>
+                    <option value="primary">Primary Residence</option>
+                    <option value="secondary">Second / Vacation Home</option>
+                    <option value="investment">Investment / Rental Property</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 2: PROPERTY BUDGET & CREDIT -->
+            <div class="wizard-step-pane" data-step="2">
+              <h3 style="margin-bottom: 8px;">Estimated Purchase Price &amp; Down Payment</h3>
+              <p style="color: var(--muted); font-size: 0.94rem; margin-bottom: 24px;">Enter your target price range and your estimated credit profile.</p>
+
+              <div class="form-grid-2">
+                <div class="form-field">
+                  <label for="wizPrice">Target Purchase Price ($)</label>
+                  <input type="number" id="wizPrice" value="450000" min="50000" max="3000000" step="5000" required>
+                </div>
+                <div class="form-field">
+                  <label for="wizDown">Down Payment Amount ($)</label>
+                  <input type="number" id="wizDown" value="90000" min="0" max="3000000" step="1000" required>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label>Estimated Credit Score Tier</label>
+                <div class="choice-cards-grid" style="grid-template-columns: repeat(4, 1fr);">
+                  <div class="choice-card selected" data-group="credit">
+                    <strong style="color: var(--primary);">740+</strong>
+                    <span style="font-size: 0.78rem; color: var(--muted);">Excellent</span>
+                  </div>
+                  <div class="choice-card" data-group="credit">
+                    <strong style="color: var(--primary);">700 – 739</strong>
+                    <span style="font-size: 0.78rem; color: var(--muted);">Good</span>
+                  </div>
+                  <div class="choice-card" data-group="credit">
+                    <strong style="color: var(--primary);">640 – 699</strong>
+                    <span style="font-size: 0.78rem; color: var(--muted);">Fair</span>
+                  </div>
+                  <div class="choice-card" data-group="credit">
+                    <strong style="color: var(--primary);">580 – 639</strong>
+                    <span style="font-size: 0.78rem; color: var(--muted);">Rebuilding</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="wizFirstTime">Are you a first-time homebuyer?</label>
+                <select id="wizFirstTime">
+                  <option value="yes">Yes, I haven't owned a home in the past 3 years</option>
+                  <option value="no">No, I have owned a home previously</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- STEP 3: FINANCIAL PROFILE & EMPLOYMENT -->
+            <div class="wizard-step-pane" data-step="3">
+              <h3 style="margin-bottom: 8px;">Employment &amp; Household Income</h3>
+              <p style="color: var(--muted); font-size: 0.94rem; margin-bottom: 24px;">This helps our automated underwriting engine determine your qualifying loan limit.</p>
+
+              <div class="form-field">
+                <label for="wizEmployment">Primary Employment Type</label>
+                <select id="wizEmployment" required>
+                  <option value="w2">W-2 Employed Full-Time</option>
+                  <option value="self">Self-Employed / 1099 Contractor</option>
+                  <option value="military">Active Military / Veteran</option>
+                  <option value="retired">Retired / Pension / Investment</option>
+                </select>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="form-field">
+                  <label for="wizIncome">Annual Household Gross Income ($)</label>
+                  <input type="number" id="wizIncome" value="115000" step="1000" required>
+                </div>
+                <div class="form-field">
+                  <label for="wizDebt">Estimated Monthly Debts ($)</label>
+                  <input type="number" id="wizDebt" value="450" placeholder="Car loans, credit cards, student loans" required>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 4: CONTACT & REVIEW RECAP -->
+            <div class="wizard-step-pane" data-step="4">
+              <h3 style="margin-bottom: 8px;">Instant Pre-Qualification Review</h3>
+              <p style="color: var(--muted); font-size: 0.94rem; margin-bottom: 20px;">Review your preliminary qualifications and enter your contact details to generate your conditional approval.</p>
+
+              <!-- Dynamic Recap Box -->
+              <div style="background: var(--surface-alt); border-radius: var(--radius-md); padding: 20px; border: 1px solid var(--border-color); display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; text-align: center;">
+                <div>
+                  <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--muted);">Requested Loan</span>
+                  <strong id="recapLoanAmt" style="font-family: var(--font-heading); font-size: 1.3rem; color: var(--dark); display: block;">$360,000</strong>
+                </div>
+                <div>
+                  <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--muted);">Estimated Note</span>
+                  <strong id="recapMonthly" style="font-family: var(--font-heading); font-size: 1.3rem; color: var(--primary); display: block;">$2,450 /mo</strong>
+                </div>
+                <div>
+                  <span style="font-size: 0.78rem; text-transform: uppercase; color: var(--muted);">Max Purchasing Power</span>
+                  <strong id="recapMaxHome" style="font-family: var(--font-heading); font-size: 1.3rem; color: var(--accent); display: block;">$517,500</strong>
+                </div>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="form-field">
+                  <label for="wizFirstName">First Name</label>
+                  <input type="text" id="wizFirstName" placeholder="Jennifer" required>
+                </div>
+                <div class="form-field">
+                  <label for="wizLastName">Last Name</label>
+                  <input type="text" id="wizLastName" placeholder="Vance" required>
+                </div>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="form-field">
+                  <label for="wizEmail">Email Address</label>
+                  <input type="email" id="wizEmail" placeholder="jennifer@example.com" required>
+                </div>
+                <div class="form-field">
+                  <label for="wizPhone">Mobile Phone</label>
+                  <input type="tel" id="wizPhone" placeholder="(555) 234-5678" required>
+                </div>
+              </div>
+
+              <div style="font-size: 0.8rem; color: var(--muted); margin-top: 10px;">
+                By clicking "Generate Pre-Approval", you authorize Mortgage Broker LLC to contact you regarding home financing options. This soft pre-qualification does NOT affect your credit score.
+              </div>
+            </div>
+
+            <!-- Pre-Approval Certificate Container -->
+            <div id="preApprovalCertificate"></div>
+
+            <!-- Wizard Navigation Buttons -->
+            <div class="wizard-nav-btns">
+              <button type="button" class="btn btn-outline" id="wizardPrevBtn" style="display: none;">&larr; Previous Step</button>
+              <div></div>
+              <button type="button" class="btn btn-primary" id="wizardNextBtn">Next Step &rarr;</button>
+              <button type="submit" class="btn btn-primary" id="wizardSubmitBtn" style="display: none;">Generate Pre-Approval &rarr;</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container-wide">
+      <div class="footer-bottom">
+        <div>&copy; 2026 Mortgage Broker LLC. All rights reserved. Equal Housing Lender. NMLS #1849204.</div>
+        <div class="footer-bottom-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-and-conditions.html">Terms of Use</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/apply-wizard.js"></script>
+</body>
+</html>

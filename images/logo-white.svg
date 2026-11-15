@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" fill="none">
+  <g transform="translate(4, 6)">
+    <path d="M24 2L2 20H10V42H20V28H28V42H38V20H46L24 2Z" fill="#FFFFFF"/>
+    <path d="M24 10L14 18V38H18V26H30V38H34V18L24 10Z" fill="#7BB335"/>
+    <path d="M34 8L44 16V22L34 14V8Z" fill="#9CD84E" opacity="0.9"/>
+    <circle cx="24" cy="20" r="3.5" fill="#FFFFFF"/>
+  </g>
+  <text x="62" y="31" font-family="'Outfit', 'Segoe UI', sans-serif" font-size="22" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">MORTGAGE</text>
+  <text x="195" y="31" font-family="'Outfit', 'Segoe UI', sans-serif" font-size="22" font-weight="800" fill="#7BB335" letter-spacing="-0.5">BROKER</text>
+  <text x="63" y="47" font-family="'Figtree', 'Segoe UI', sans-serif" font-size="9" font-weight="600" fill="#D2DEC8" letter-spacing="2.8">HOME LOANS &amp; FINANCING</text>
+</svg>
