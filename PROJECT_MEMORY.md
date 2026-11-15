@@ -44,6 +44,11 @@
 - **Repositories Synchronized:**
   - `origin`: `https://github.com/Penta-Websites/Mortgage-Broker.git` (`main` and `gh-pages`)
   - `pixel`: `https://github.com/Pixel-Force/Mortgage-Broker.git` (`main` and `gh-pages`)
-- **Live URLs:**
-  - [https://pixel-force.github.io/Mortgage-Broker/](https://pixel-force.github.io/Mortgage-Broker/)
-  - [https://penta-websites.github.io/Mortgage-Broker/](https://penta-websites.github.io/Mortgage-Broker/)
+- **Live URLs (Both Verified & Active - HTTP 200 OK):**
+  - **Penta-Websites:** [https://penta-websites.github.io/Mortgage-Broker/](https://penta-websites.github.io/Mortgage-Broker/) (HTTP 200 OK, Jekyll bypass enabled via `.nojekyll`, Pages source configured to `main` branch)
+  - **Pixel-Force:** [https://pixel-force.github.io/Mortgage-Broker/](https://pixel-force.github.io/Mortgage-Broker/) (HTTP 200 OK)
+
+## 5. Issue Resolution Log
+- **Penta-Websites 404 Issue:**
+  - *Cause*: The repository was missing a root `.nojekyll` file and GitHub Pages build had not been triggered after initial creation; GitHub Actions was disabled by the organization policy so legacy Jekyll build required `.nojekyll` and an active source trigger.
+  - *Resolution*: Created `.nojekyll` file at repository root, committed and pushed to both `main` and `gh-pages` across `origin` and `pixel`, and updated the Pages source to `main` (`/`). The site built successfully and returns `HTTP 200 OK`.
