@@ -198,3 +198,77 @@
     display: inline-block;
   }
 }
+
+
+/* Additional Responsive Rules for Pixel-Perfect Sections */
+@media (max-width: 992px) {
+  .main-header.header-overlay {
+    top: 0;
+    position: relative;
+    background-color: var(--tm-secondary);
+  }
+  
+  .hero-slide {
+    padding-top: 80px;
+    min-height: 620px;
+  }
+  
+  .hero-slider-wrap {
+    min-height: 620px;
+  }
+
+  .hero-display-title {
+    font-size: 3.5rem;
+  }
+
+  .about-callout-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .countdown-split-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .countdown-split-img {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-display-title {
+    font-size: 2.8rem;
+  }
+
+  .countdown-timer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .offer-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .events-list-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-list-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-posts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

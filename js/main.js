@@ -119,16 +119,16 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // 4. CATEGORY FILTERING (EVENTS & GALLERY)
-  const filterBtns = document.querySelectorAll('.filter-btn');
+  const filterBtns = document.querySelectorAll('.filter-btn, .gallery-tab-btn');
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const container = btn.closest('section');
-      const group = container.querySelectorAll('.filter-btn');
+      const group = container.querySelectorAll('.filter-btn, .gallery-tab-btn');
       group.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
       const filterValue = btn.getAttribute('data-filter');
-      const items = container.querySelectorAll('.filterable-item');
+      const items = container.querySelectorAll('.filterable-item, .gallery-box-item');
 
       items.forEach(item => {
         if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
@@ -146,8 +146,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // 5. LIVE EVENT COUNTDOWN TIMER
-  const countdownEl = document.querySelector('.event-countdown');
-  if (countdownEl) {
+    const countdownEls = document.querySelectorAll('.event-countdown, #countdown-timer, .countdown-timer');
+  if (countdownEls.length > 0) {
     const targetDate = new Date();
     targetDate.setDate(targetDate.getDate() + 24);
     targetDate.setHours(18, 0, 0, 0);
@@ -160,18 +160,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const days = Math.floor(difference / (1000 * 60 * 60 * 24));
       const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      const minutes = Math.floor((difference % (1000 * 60)) / (1000 * 60));
       const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-      const dEl = countdownEl.querySelector('.count-days');
-      const hEl = countdownEl.querySelector('.count-hours');
-      const mEl = countdownEl.querySelector('.count-minutes');
-      const sEl = countdownEl.querySelector('.count-seconds');
+      countdownEls.forEach(countdownEl => {
+        const dEl = countdownEl.querySelector('.count-days');
+        const hEl = countdownEl.querySelector('.count-hours');
+        const mEl = countdownEl.querySelector('.count-minutes');
+        const sEl = countdownEl.querySelector('.count-seconds');
 
-      if (dEl) dEl.textContent = String(days).padStart(2, '0');
-      if (hEl) hEl.textContent = String(hours).padStart(2, '0');
-      if (mEl) mEl.textContent = String(minutes).padStart(2, '0');
-      if (sEl) sEl.textContent = String(seconds).padStart(2, '0');
+        if (dEl) dEl.textContent = String(days).padStart(2, '0');
+        if (hEl) hEl.textContent = String(hours).padStart(2, '0');
+        if (mEl) mEl.textContent = String(minutes).padStart(2, '0');
+        if (sEl) sEl.textContent = String(seconds).padStart(2, '0');
+      });
     }
 
     updateCountdown();

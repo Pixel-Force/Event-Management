@@ -318,21 +318,68 @@ p {
 /* ==========================================================================
    MAIN HEADER & NAVIGATION (STICKY)
    ========================================================================== */
+/* Header Overlay & Elevated Sticky Navbar */
 .main-header {
-  background-color: #ffffff;
+  background-color: var(--tm-secondary);
   position: relative;
   z-index: 1000;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   transition: var(--tm-transition);
 }
 
-.main-header.sticky {
-  position: fixed;
-  top: 0;
+.main-header.header-overlay {
+  position: absolute;
+  top: 48px;
   left: 0;
   width: 100%;
+  z-index: 1000;
+  background: rgba(14, 56, 94, 0.42);
+  backdrop-filter: blur(4px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: none;
+}
+
+.main-header.header-overlay .nav-link,
+.main-header .nav-link {
+  color: #ffffff;
+}
+
+.main-header.header-overlay .nav-link:hover,
+.main-header.header-overlay .nav-item.active > .nav-link,
+.main-header .nav-link:hover,
+.main-header .nav-item.active > .nav-link {
+  color: var(--tm-skincolor);
+}
+
+.main-header.header-overlay .search-trigger-btn,
+.main-header .search-trigger-btn {
+  color: #ffffff;
+}
+
+.main-header.header-overlay .search-trigger-btn:hover,
+.main-header .search-trigger-btn:hover {
+  color: var(--tm-skincolor);
+}
+
+.main-header.header-overlay .mobile-toggle-btn,
+.main-header .mobile-toggle-btn {
+  color: #ffffff;
+}
+
+.main-header.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  background-color: #0e385e !important;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25) !important;
+  border-bottom: none !important;
+  z-index: 9999 !important;
   animation: slideDownHeader 0.35s ease forwards;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.main-header.sticky .header-inner {
+  height: 80px;
 }
 
 @keyframes slideDownHeader {
@@ -566,8 +613,10 @@ p {
    ========================================================================== */
 .hero-slider-wrap {
   position: relative;
+  width: 100%;
+  min-height: 820px;
   overflow: hidden;
-  min-height: 680px;
+  background-color: #072037;
 }
 
 .hero-slide {
@@ -576,13 +625,16 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
+  min-height: 820px;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition: opacity 0.8s ease, transform 1.2s ease;
   display: flex;
   align-items: center;
   background-size: cover;
   background-position: center center;
+  padding-top: 140px;
+  padding-bottom: 60px;
 }
 
 .hero-slide.active {
@@ -593,19 +645,15 @@ p {
 
 .hero-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, rgba(14, 56, 94, 0.88) 0%, rgba(14, 56, 94, 0.65) 100%);
+  inset: 0;
+  background: linear-gradient(135deg, rgba(14, 56, 94, 0.78) 0%, rgba(14, 56, 94, 0.48) 100%);
   z-index: 1;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 850px;
-  padding: 100px 0 90px 0;
+  max-width: 860px;
   color: #ffffff;
 }
 
@@ -1575,4 +1623,252 @@ p {
 
 .back-to-top-btn:hover {
   transform: translateY(-5px);
+}
+
+
+/* ==========================================================================
+   HOMEPAGE EXACT SECTION STYLES
+   ========================================================================== */
+
+/* Section 1: 2-Column Asymmetric About & Wedding Planner Callout */
+.about-callout-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 45px;
+  align-items: flex-start;
+}
+
+.about-left-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-left-col .heading-seperator {
+  margin-left: 0;
+  margin-bottom: 25px;
+}
+
+.about-left-img-wrap {
+  position: relative;
+  margin-top: 25px;
+}
+
+.about-left-img-wrap img {
+  border-radius: var(--tm-radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  width: 100%;
+}
+
+.planner-callout-box {
+  background-color: var(--tm-secondary);
+  border-radius: var(--tm-radius);
+  overflow: hidden;
+  box-shadow: 0 10px 35px rgba(14, 56, 94, 0.15);
+}
+
+.planner-callout-header {
+  padding: 35px 30px;
+  background: var(--tm-secondary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.planner-callout-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 61, 85, 0.15);
+  color: var(--tm-skincolor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.planner-callout-title {
+  font-family: var(--tm-font-display);
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+.planner-callout-body {
+  padding: 35px 30px;
+  background-color: #ffffff;
+  color: var(--tm-body-text);
+}
+
+.planner-callout-prompt {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--tm-heading-text);
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.planner-callout-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  color: #64748b;
+}
+
+/* Section 2: Provide Best Services with row-bg-001.jpg */
+.section-services-showcase {
+  position: relative;
+  background-image: url('../images/row-bg-001.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 120px 0 95px 0;
+  color: #ffffff;
+}
+
+.section-services-showcase .section-services-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(14, 56, 94, 0.92);
+  z-index: 1;
+}
+
+.section-services-showcase .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Section 4: Live Countdown Split Banner */
+.countdown-split-wrap {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  border-radius: var(--tm-radius);
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.countdown-split-img {
+  position: relative;
+  min-height: 380px;
+  background-image: url('../images/col-bg-002.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.countdown-split-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(14, 56, 94, 0.7) 0%, rgba(14, 56, 94, 0.3) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px;
+  color: #ffffff;
+}
+
+.countdown-split-content {
+  background-color: var(--tm-skincolor);
+  color: #ffffff;
+  padding: 50px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.countdown-split-tag {
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 8px;
+}
+
+.countdown-split-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 25px;
+  line-height: 1.25;
+}
+
+.countdown-timer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.countdown-box {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: var(--tm-radius);
+  padding: 16px 8px;
+  text-align: center;
+  backdrop-filter: blur(4px);
+}
+
+.countdown-number {
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 1;
+  color: #ffffff;
+  margin-bottom: 4px;
+  font-family: var(--tm-font-display);
+  letter-spacing: 1px;
+}
+
+.countdown-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Section 6: Photo Gallery Header with Dark Overlay */
+.gallery-section-dark {
+  background-color: var(--tm-secondary);
+  background-image: url('../images/col-bg-004.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 95px 0 110px 0;
+  color: #ffffff;
+  position: relative;
+}
+
+.gallery-section-dark .section-title {
+  color: #ffffff;
+}
+
+.gallery-filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+
+.gallery-tab-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 8px 24px;
+  border-radius: 30px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--tm-transition);
+}
+
+.gallery-tab-btn:hover,
+.gallery-tab-btn.active {
+  background: var(--tm-skincolor);
+  border-color: var(--tm-skincolor);
+  color: #ffffff;
 }

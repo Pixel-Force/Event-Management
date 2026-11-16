@@ -54,12 +54,12 @@
   <!-- ==========================================================================
        MAIN HEADER & NAVIGATION (CLICKABLE LOGO REQUIREMENT)
        ========================================================================== -->
-  <header class="main-header">
+  <header class="main-header header-overlay">
     <div class="container">
       <div class="header-inner">
         <!-- Logo & Website Name "Event Management" Clickable in Header -->
         <a href="index.html" class="brand-logo-link" title="Event Management — Home">
-          <img src="images/logo.svg" alt="Event Management" class="brand-logo-img">
+          <img src="images/logo-white.svg" alt="Event Management" class="brand-logo-img">
         </a>
 
         <!-- Desktop Navigation -->
@@ -138,9 +138,9 @@
   <div class="mobile-drawer-overlay"></div>
   <aside class="mobile-drawer">
     <div class="drawer-header">
-      <a href="index.html" class="brand-logo-link">
-        <img src="images/logo.svg" alt="Event Management" style="height: 40px;">
-      </a>
+      <a href="index.html" class="brand-logo-link" title="Event Management — Home">
+          <img src="images/logo-white.svg" alt="Event Management" class="brand-logo-img">
+        </a>
       <button class="drawer-close-btn" aria-label="Close menu">&times;</button>
     </div>
     <ul class="mobile-nav-list">
@@ -216,65 +216,64 @@
   </section>
 
   <!-- ==========================================================================
-       SECTION 1: WELCOME / ABOUT OUR EVENT MANAGEMENT
+       SECTION 1: WELCOME & ABOUT OUR EVENT MANAGEMENT (1:1 ACCURACY)
        ========================================================================== -->
   <section class="section-py">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-img-box">
-          <img src="images/about-img.jpg" alt="About Event Management">
-          <div class="about-experience-badge">
-            <div class="badge-number">15+</div>
-            <div class="badge-label">Years of Grand Excellence</div>
-          </div>
-        </div>
-        <div class="about-content">
+      <div class="about-callout-grid">
+        <!-- Left Column: About Event Management & Experience Badge -->
+        <div class="about-left-col">
           <span class="section-subtitle">WELCOME EVENT MANAGEMENT</span>
           <h2 class="section-title">About Our Event Management</h2>
-          <div class="heading-seperator" style="margin-left: 0; margin-bottom: 25px;"></div>
+          <div class="heading-seperator"></div>
           <p class="about-lead">With our passion, knowledge, creative flair and inspiration, we are dedicated in helping you to achieve your dream wedding day or special event within your budget.</p>
-          <p style="color: var(--tm-body-text); margin-bottom: 25px;">Our wedding planning and events coordination services are designed for Any Sized budget, meaning anyone can experience luxury production without anxiety. From floral concepts to on-site timing, we handle every detail flawlessly.</p>
+          <p style="color: var(--tm-body-text); margin-bottom: 25px;">Our wedding planning and events coordination services are designed for Any Sized budget, meaning anyone can experience luxury production without anxiety. We orchestrate timeless celebrations with meticulous detail, unmatched vendor partnerships, and personalized care.</p>
           
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 30px;">
-            <div style="display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--tm-heading-text);"><i class="fas fa-check-circle" style="color: var(--tm-skincolor);"></i> Any Sized Budget Design</div>
-            <div style="display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--tm-heading-text);"><i class="fas fa-check-circle" style="color: var(--tm-skincolor);"></i> Bespoke Theme &amp; Decor</div>
-            <div style="display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--tm-heading-text);"><i class="fas fa-check-circle" style="color: var(--tm-skincolor);"></i> Exclusive Venue Access</div>
-            <div style="display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--tm-heading-text);"><i class="fas fa-check-circle" style="color: var(--tm-skincolor);"></i> 24/7 Day-Of Coordination</div>
+          <div class="about-left-img-wrap">
+            <img src="images/about-img.jpg" alt="About Event Management">
+            <div class="about-experience-badge">
+              <div class="badge-number">15+</div>
+              <div class="badge-label">Years of Grand Excellence</div>
+            </div>
           </div>
+        </div>
 
-          <a href="about-us.html" class="btn btn-secondary">Read More <i class="fas fa-arrow-right"></i></a>
+        <!-- Right Column: Wedding Planner & Coordinator Callout Box -->
+        <div class="about-right-col">
+          <div class="planner-callout-box">
+            <div class="planner-callout-header">
+              <div class="planner-callout-icon">
+                <i class="fas fa-gift"></i>
+              </div>
+              <h3 class="planner-callout-title">Affordable Wedding Planner &amp; Events Coordinator</h3>
+            </div>
+            <div class="planner-callout-body">
+              <h4 class="planner-callout-prompt">Contact our wedding Planner or events coordinator drop an email or give us a call</h4>
+              <p class="planner-callout-text">Arrange a commitment free discuss the details of dream wedding day or special event. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+              <div style="margin-bottom: 25px;">
+                <a href="contact-us.html" class="btn btn-primary">
+                  Read More <i class="fas fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+            <img src="images/col-bg-001.jpg" alt="Wedding Celebration Staging" class="planner-callout-banner-img">
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ==========================================================================
-       SECTION 2 & 3: AFFORDABLE WEDDING PLANNER & EVENTS COORDINATOR STRIP
+       SECTION 2: GREAT PROVIDE / PROVIDE BEST SERVICES (3 LARGE SHOWCASE CARDS)
        ========================================================================== -->
-  <section class="wedding-planner-strip">
+  <section class="section-services-showcase">
+    <div class="section-services-overlay"></div>
     <div class="container">
-      <div class="strip-inner">
-        <div>
-          <h2 class="strip-headline">Affordable Wedding Planner &amp; Events Coordinator</h2>
-          <p class="strip-subtext">Contact our wedding Planner or events coordinator drop an email or give us a call. Arrange a commitment free discussion of the details of your dream wedding day or special event.</p>
-        </div>
-        <div>
-          <a href="#" class="btn btn-primary" data-modal-target="quoteModal">Contact Us <i class="fas fa-phone-alt"></i></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       SECTION 4: GREAT PROVIDE / PROVIDE BEST SERVICES (3 LARGE SHOWCASE CARDS)
-       ========================================================================== -->
-  <section class="section-py bg-grey">
-    <div class="container">
-      <div class="section-title-wrap">
+      <div class="section-title-wrap text-white">
         <span class="section-subtitle">GREAT PROVIDE EVENT MANAGEMENT</span>
-        <h2 class="section-title">Provide Best Services</h2>
+        <h2 class="section-title text-white">Provide Best Services</h2>
         <div class="heading-seperator"></div>
-        <p class="section-description">We combine creative imagination and technical mastery to bring the world's most memorable weddings and parties to life.</p>
+        <p class="section-description" style="color: rgba(255, 255, 255, 0.85);">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
       </div>
 
       <div class="showcase-services-grid">
@@ -285,7 +284,7 @@
             <h3 class="showcase-card-title">Wedding</h3>
             <p class="showcase-card-desc">Complete ceremony direction, bridal timelines, floral styling, luxury seating, and rehearsal dinner orchestration.</p>
             <div>
-              <a href="service-details.html" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.82rem;">Read More <i class="fas fa-arrow-right"></i></a>
+              <a href="service-details.html" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.85rem; border-radius: 30px;">Read More <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -297,7 +296,7 @@
             <h3 class="showcase-card-title">Private Party</h3>
             <p class="showcase-card-desc">Milestone birthdays, rooftop anniversaries, theme masquerades, and intimate dinners with custom cocktail bars.</p>
             <div>
-              <a href="service-details.html" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.82rem;">Read More <i class="fas fa-arrow-right"></i></a>
+              <a href="service-details.html" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.85rem; border-radius: 30px;">Read More <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -309,7 +308,7 @@
             <h3 class="showcase-card-title">Corporate Party</h3>
             <p class="showcase-card-desc">Annual executive galas, high-tech product launches, awards ceremonies, and multinational shareholder banquets.</p>
             <div>
-              <a href="service-details.html" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.82rem;">Read More <i class="fas fa-arrow-right"></i></a>
+              <a href="service-details.html" class="btn btn-primary" style="padding: 10px 22px; font-size: 0.85rem; border-radius: 30px;">Read More <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -318,15 +317,15 @@
   </section>
 
   <!-- ==========================================================================
-       SECTION 5: WHAT WE OFFER / OUR GREAT SERVICES (ICON BOXES)
+       SECTION 3: WHAT WE OFFER / OUR GREAT SERVICES (ICON BOXES)
        ========================================================================== -->
-  <section class="section-py">
+  <section class="section-py bg-grey" style="padding-bottom: 40px;">
     <div class="container">
       <div class="section-title-wrap">
         <span class="section-subtitle">WHAT WE OFFER</span>
         <h2 class="section-title">Our Great Services</h2>
         <div class="heading-seperator"></div>
-        <p class="section-description">We have a huge range of suppliers and contacts in the industry that work closely with us to ensure you get the perfect wedding day.</p>
+        <p class="section-description">We have a huge range of suppliers and contacts in the industry that work closely with us to not only ensure you get the wedding day of your dreams.</p>
       </div>
 
       <div class="offer-services-grid">
@@ -352,6 +351,48 @@
           <h3 class="offer-box-title">Wedding Cakes</h3>
           <p class="offer-box-desc">Custom pastry sculptures, multi-tier artisanal wedding cakes, French dessert bars, and late-night treat carts.</p>
           <a href="service-details.html" class="offer-readmore">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- ==========================================================================
+           SECTION 4: LIVE COUNTDOWN TIMER SPLIT BANNER (1:1 ACCURACY)
+           ========================================================================== -->
+      <div class="countdown-split-wrap">
+        <!-- Left: Promotional Event Image -->
+        <div class="countdown-split-img">
+          <div class="countdown-split-img-overlay">
+            <span class="badge" style="background: rgba(255,61,85,0.9); color:#fff; display:inline-block; padding: 6px 16px; border-radius: 4px; font-weight:800; width:fit-content; margin-bottom:12px; letter-spacing:1px; text-transform:uppercase;">ANNUAL GALA 2026</span>
+            <h3 style="color:#fff; font-size: 2.1rem; font-weight: 800; line-height: 1.25; margin-bottom:0; text-shadow: 0 3px 15px rgba(0,0,0,0.4);">Celebrate Life's Grandest Moments With Us</h3>
+          </div>
+        </div>
+
+        <!-- Right: Skincolor Coral Countdown Timer -->
+        <div class="countdown-split-content">
+          <span class="countdown-split-tag">NEXT SIGNATURE EVENT COUNTDOWN</span>
+          <h3 class="countdown-split-title">New York Annual Gala &amp; Awards 2026</h3>
+          <div class="countdown-timer-grid event-countdown" id="countdown-timer">
+            <div class="countdown-box">
+              <div class="countdown-number count-days">24</div>
+              <div class="countdown-label">Days</div>
+            </div>
+            <div class="countdown-box">
+              <div class="countdown-number count-hours">18</div>
+              <div class="countdown-label">Hours</div>
+            </div>
+            <div class="countdown-box">
+              <div class="countdown-number count-minutes">45</div>
+              <div class="countdown-label">Minutes</div>
+            </div>
+            <div class="countdown-box">
+              <div class="countdown-number count-seconds">30</div>
+              <div class="countdown-label">Seconds</div>
+            </div>
+          </div>
+          <div>
+            <a href="#" class="btn btn-secondary" data-modal-target="quoteModal" style="background:#0e385e; border-color:#0e385e; padding:14px 32px; border-radius:30px; font-weight:800;">
+              <i class="fas fa-ticket-alt"></i> Reserve Early Bird Passes
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -491,81 +532,92 @@
   </section>
 
   <!-- ==========================================================================
-       SECTION 8 & 9: SEE OUR BEST / PHOTO GALLERY
+       SECTION 6 & 7: SEE OUR BEST / PHOTO GALLERY (1:1 DARK AESTHETIC)
        ========================================================================== -->
-  <section class="section-py">
+  <section class="gallery-section-dark">
     <div class="container">
-      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; flex-wrap: wrap; gap: 20px;">
-        <div>
-          <span class="section-subtitle">SEE OUR BEST</span>
-          <h2 class="section-title" style="margin-bottom: 8px;">Photo Gallery</h2>
-          <div class="heading-seperator" style="margin-left: 0; margin-bottom: 0;"></div>
-        </div>
-        <div>
-          <a href="gallery.html" class="btn btn-primary">View More <i class="fas fa-arrow-right"></i></a>
+      <div class="section-title-wrap text-white">
+        <span class="section-subtitle">SEE OUR BEST</span>
+        <h2 class="section-title text-white">Photo Gallery</h2>
+        <div class="heading-seperator"></div>
+        <p class="section-description" style="color: rgba(255, 255, 255, 0.85);">Explore visual highlights from our premier celebrations, luxury galas, and bespoke weddings.</p>
+        
+        <div class="gallery-filter-tabs">
+          <button class="gallery-tab-btn active" data-filter="all">All</button>
+          <button class="gallery-tab-btn" data-filter="birthday">Birthday</button>
+          <button class="gallery-tab-btn" data-filter="celebration">Celebration</button>
+          <button class="gallery-tab-btn" data-filter="corporate">Corporate</button>
+          <button class="gallery-tab-btn" data-filter="party">Party</button>
+          <button class="gallery-tab-btn" data-filter="wedding">Wedding</button>
         </div>
       </div>
 
-      <div class="gallery-showcase-grid">
+      <div class="gallery-showcase-grid" style="margin-top: 40px;">
         <!-- 1 -->
-        <div class="gallery-box-item">
+        <div class="gallery-box-item" data-category="party">
           <img src="images/gallery/gallery-1.jpg" alt="Halloween Party">
           <div class="gallery-box-overlay">
             <a href="#" class="gallery-zoom-circle gallery-zoom-trigger" data-img-src="images/gallery/gallery-1.jpg"><i class="fas fa-search-plus"></i></a>
             <h4 class="gallery-box-title">Halloween Party</h4>
-            <span class="gallery-box-cat">Private Party</span>
+            <span class="gallery-box-cat">Party</span>
           </div>
         </div>
 
         <!-- 2 -->
-        <div class="gallery-box-item">
+        <div class="gallery-box-item" data-category="wedding">
           <img src="images/gallery/gallery-2.jpg" alt="Bowmi Proposal Events">
           <div class="gallery-box-overlay">
             <a href="#" class="gallery-zoom-circle gallery-zoom-trigger" data-img-src="images/gallery/gallery-2.jpg"><i class="fas fa-search-plus"></i></a>
             <h4 class="gallery-box-title">Bowmi Proposal Events</h4>
-            <span class="gallery-box-cat">Corporate / Private Party</span>
+            <span class="gallery-box-cat">Wedding</span>
           </div>
         </div>
 
         <!-- 3 -->
-        <div class="gallery-box-item">
+        <div class="gallery-box-item" data-category="corporate">
           <img src="images/gallery/gallery-3.jpg" alt="Autue Art Gallery Opening">
           <div class="gallery-box-overlay">
             <a href="#" class="gallery-zoom-circle gallery-zoom-trigger" data-img-src="images/gallery/gallery-3.jpg"><i class="fas fa-search-plus"></i></a>
             <h4 class="gallery-box-title">Autue Art Gallery Opening</h4>
-            <span class="gallery-box-cat">Private Party</span>
-          </div>
-        </div>
-
-        <!-- 4 -->
-        <div class="gallery-box-item">
-          <img src="images/gallery/gallery-4.jpg" alt="Grand Despa Events">
-          <div class="gallery-box-overlay">
-            <a href="#" class="gallery-zoom-circle gallery-zoom-trigger" data-img-src="images/gallery/gallery-4.jpg"><i class="fas fa-search-plus"></i></a>
-            <h4 class="gallery-box-title">Grand Despa Events</h4>
-            <span class="gallery-box-cat">Birthdays</span>
-          </div>
-        </div>
-
-        <!-- 5 -->
-        <div class="gallery-box-item">
-          <img src="images/gallery/gallery-5.jpg" alt="Divqi Holiday Party">
-          <div class="gallery-box-overlay">
-            <a href="#" class="gallery-zoom-circle gallery-zoom-trigger" data-img-src="images/gallery/gallery-5.jpg"><i class="fas fa-search-plus"></i></a>
-            <h4 class="gallery-box-title">Divqi Holiday Party</h4>
             <span class="gallery-box-cat">Corporate</span>
           </div>
         </div>
 
+        <!-- 4 -->
+        <div class="gallery-box-item" data-category="celebration">
+          <img src="images/gallery/gallery-4.jpg" alt="Grand Despa Events">
+          <div class="gallery-box-overlay">
+            <a href="#" class="gallery-zoom-circle gallery-zoom-trigger" data-img-src="images/gallery/gallery-4.jpg"><i class="fas fa-search-plus"></i></a>
+            <h4 class="gallery-box-title">Grand Despa Events</h4>
+            <span class="gallery-box-cat">Celebration</span>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="gallery-box-item" data-category="party">
+          <img src="images/gallery/gallery-5.jpg" alt="Divqi Holiday Party">
+          <div class="gallery-box-overlay">
+            <a href="#" class="gallery-zoom-circle gallery-zoom-trigger" data-img-src="images/gallery/gallery-5.jpg"><i class="fas fa-search-plus"></i></a>
+            <h4 class="gallery-box-title">Divqi Holiday Party</h4>
+            <span class="gallery-box-cat">Party</span>
+          </div>
+        </div>
+
         <!-- 6 -->
-        <div class="gallery-box-item">
+        <div class="gallery-box-item" data-category="birthday">
           <img src="images/gallery/gallery-6.jpg" alt="Helen Birthday Party">
           <div class="gallery-box-overlay">
             <a href="#" class="gallery-zoom-circle gallery-zoom-trigger" data-img-src="images/gallery/gallery-6.jpg"><i class="fas fa-search-plus"></i></a>
             <h4 class="gallery-box-title">Helen Birthday Party</h4>
-            <span class="gallery-box-cat">Private Milestone</span>
+            <span class="gallery-box-cat">Birthday</span>
           </div>
         </div>
+      </div>
+      
+      <div style="text-align: center; margin-top: 45px;">
+        <a href="gallery.html" class="btn btn-primary" style="padding: 12px 34px; border-radius: 30px; font-weight: 800;">
+          View Full Gallery <i class="fas fa-arrow-right"></i>
+        </a>
       </div>
     </div>
   </section>
@@ -707,8 +759,8 @@
         <div>
           <!-- Logo & Website Name "Event Management" Clickable in Footer -->
           <a href="index.html" class="footer-logo-link" title="Event Management — Home">
-            <img src="images/logo-white.svg" alt="Event Management" class="footer-logo-img">
-          </a>
+              <img src="images/logo-white.svg" alt="Event Management" class="footer-logo-img">
+            </a>
           <h4 class="footer-widget-title" style="margin-top: 15px;">Get in touch</h4>
           <p class="footer-about-text">742 Evergreen Terrace, New York, NY 10001<br>Phone: +1 800 123 4567<br>Email: info@eventmanagement.com<br>Mon - Sat: 9:00am to 6:00pm</p>
           <div class="footer-social-links">
