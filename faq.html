@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently Asked Questions — Event Management</title>
+  <meta name="description" content="Answers to common questions regarding our event production, wedding coordination, venue scouting, catering policies, and booking timelines.">
+  
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <div class="top-bar-item"><i class="fas fa-map-marker-alt"></i> <span>742 Evergreen Terrace, New York, NY 10001</span></div>
+        <div class="top-bar-item"><i class="fas fa-clock"></i> <span>Mon - Sat: 9:00 AM - 7:00 PM</span></div>
+      </div>
+      <div class="top-bar-right">
+        <div class="top-bar-item"><i class="fas fa-envelope"></i> <span>help@eventmanagement.com</span></div>
+        <div class="top-social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header with Clickable Logo -->
+  <header class="main-header">
+    <div class="container">
+      <div class="header-inner">
+        <!-- Logo and website name "Event Management" Clickable in Header -->
+        <a href="index.html" class="brand-logo-link" title="Event Management — Home">
+          <img src="images/logo.svg" alt="Event Management" class="brand-logo-img">
+        </a>
+
+        <nav class="main-nav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about-us.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="our-events.html" class="nav-link">Events</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="our-team.html" class="nav-link">Team</a></li>
+            <li class="nav-item active"><a href="faq.html" class="nav-link">FAQ</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="contact-us.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a href="#" class="btn btn-primary" data-modal-target="quoteModal">
+            <i class="fas fa-calendar-check"></i> Book Event
+          </a>
+          <button class="mobile-toggle-btn" aria-label="Toggle Navigation"><i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo-link"><img src="images/logo.svg" alt="Event Management" style="height: 38px;"></a>
+      <button class="drawer-close-btn">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li class="mobile-nav-item"><a href="about-us.html" class="mobile-nav-link">About Us</a></li>
+      <li class="mobile-nav-item"><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li class="mobile-nav-item"><a href="our-events.html" class="mobile-nav-link">Events</a></li>
+      <li class="mobile-nav-item"><a href="faq.html" class="mobile-nav-link">FAQ</a></li>
+      <li class="mobile-nav-item"><a href="contact-us.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+  </aside>
+
+  <!-- Titlebar -->
+  <section class="page-titlebar">
+    <div class="page-titlebar-overlay"></div>
+    <div class="container page-titlebar-content">
+      <h1>Frequently Asked Questions</h1>
+      <div class="breadcrumb-nav">
+        <a href="index.html">Home</a>
+        <span class="separator"><i class="fas fa-chevron-right"></i></span>
+        <span>FAQ</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section with Search -->
+  <section class="section-py">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Help &amp; Answers</span>
+        <h2 class="section-title">Knowledge Base &amp; Policies</h2>
+        <p class="section-description">Clear, transparent answers to help you plan your next celebration with total clarity.</p>
+      </div>
+
+      <div style="max-width: 850px; margin: 0 auto;">
+        <!-- Category 1: General Planning -->
+        <h3 style="color: var(--secondary-color); font-size: 1.4rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+          <i class="fas fa-calendar-check text-primary"></i> General Event Planning
+        </h3>
+
+        <div class="faq-accordion-group" style="display: flex; flex-direction: column; gap: 15px; margin-bottom: 40px;">
+          <div class="faq-accordion-item active" style="border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden;">
+            <div class="faq-accordion-header" style="padding: 18px 22px; background: var(--bg-light); font-weight: 700; color: var(--secondary-color); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+              <span>How early should we start the planning process?</span>
+              <i class="fas fa-minus text-primary"></i>
+            </div>
+            <div class="faq-accordion-body" style="padding: 0 22px; max-height: 200px; overflow: hidden; transition: max-height 0.35s ease; background: #fff;">
+              <p style="padding-top: 15px; color: var(--text-color);">For major weddings and large-scale corporate summits (over 200 guests), we recommend starting 9 to 12 months in advance. For private milestone birthdays and intimate dinners, 6 to 12 weeks is typically sufficient.</p>
+            </div>
+          </div>
+
+          <div class="faq-accordion-item" style="border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden;">
+            <div class="faq-accordion-header" style="padding: 18px 22px; background: var(--bg-light); font-weight: 700; color: var(--secondary-color); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+              <span>What is the difference between Day-Of Coordination and Full Production?</span>
+              <i class="fas fa-plus text-primary"></i>
+            </div>
+            <div class="faq-accordion-body" style="padding: 0 22px; max-height: 0; overflow: hidden; transition: max-height 0.35s ease; background: #fff;">
+              <p style="padding-top: 15px; color: var(--text-color);">Day-Of Coordination steps in 4 to 6 weeks before your date to take over vendor communication and execute your existing timeline. Full Production begins at concept phase: budgeting, venue sourcing, aesthetic design, vendor contracting, and total stage management.</p>
+            </div>
+          </div>
+
+          <div class="faq-accordion-item" style="border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden;">
+            <div class="faq-accordion-header" style="padding: 18px 22px; background: var(--bg-light); font-weight: 700; color: var(--secondary-color); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+              <span>Can we customize any of your standard packages?</span>
+              <i class="fas fa-plus text-primary"></i>
+            </div>
+            <div class="faq-accordion-body" style="padding: 0 22px; max-height: 0; overflow: hidden; transition: max-height 0.35s ease; background: #fff;">
+              <p style="padding-top: 15px; color: var(--text-color);">Absolutely! Every couple and company has distinctive priorities. We will build an itemized proposal around your exact requirements, omitting elements you do not need.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Venues, Catering & Logistics -->
+        <h3 style="color: var(--secondary-color); font-size: 1.4rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+          <i class="fas fa-utensils text-primary"></i> Venues, Catering &amp; Logistics
+        </h3>
+
+        <div class="faq-accordion-group" style="display: flex; flex-direction: column; gap: 15px; margin-bottom: 40px;">
+          <div class="faq-accordion-item" style="border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden;">
+            <div class="faq-accordion-header" style="padding: 18px 22px; background: var(--bg-light); font-weight: 700; color: var(--secondary-color); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+              <span>Do you assist with venue contracts and licensing?</span>
+              <i class="fas fa-plus text-primary"></i>
+            </div>
+            <div class="faq-accordion-body" style="padding: 0 22px; max-height: 0; overflow: hidden; transition: max-height 0.35s ease; background: #fff;">
+              <p style="padding-top: 15px; color: var(--text-color);">Yes. We review venue insurance requirements, noise curfew ordinances, load-in protocols, and beverage liability agreements on your behalf to avoid surprise surcharges.</p>
+            </div>
+          </div>
+
+          <div class="faq-accordion-item" style="border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden;">
+            <div class="faq-accordion-header" style="padding: 18px 22px; background: var(--bg-light); font-weight: 700; color: var(--secondary-color); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+              <span>How do you handle dietary preferences or international cuisines?</span>
+              <i class="fas fa-plus text-primary"></i>
+            </div>
+            <div class="faq-accordion-body" style="padding: 0 22px; max-height: 0; overflow: hidden; transition: max-height 0.35s ease; background: #fff;">
+              <p style="padding-top: 15px; color: var(--text-color);">Our culinary partners cater to all diets: vegan, gluten-free, halal, kosher, and regional fusion. We arrange private tasting sessions where you sample the menu prior to finalizing.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Still have questions card -->
+        <div style="background: var(--bg-light); border: 2px dashed var(--primary-color); border-radius: 8px; padding: 35px; text-align: center; margin-top: 30px;">
+          <h4 style="font-size: 1.3rem; margin-bottom: 10px;">Have More Specific Inquiries?</h4>
+          <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 20px;">Our lead coordinators are on standby to discuss your date, venue, or budget.</p>
+          <a href="contact-us.html" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Speak With A Coordinator</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer (Clickable Logo Requirement) -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div>
+          <!-- Logo and website name "Event Management" Clickable in Footer -->
+          <a href="index.html" class="footer-logo-link" title="Event Management — Home">
+            <img src="images/logo-white.svg" alt="Event Management" class="footer-logo-img">
+          </a>
+          <p class="footer-about-text"><strong>Event Management</strong> is an elite event production, wedding coordination, and celebrations agency renowned for bringing extraordinary visual elegance to every occasion.</p>
+          <div class="footer-social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-widget-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="about-us.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+            <li><a href="services.html"><i class="fas fa-angle-right"></i> Services</a></li>
+            <li><a href="our-events.html"><i class="fas fa-angle-right"></i> Events</a></li>
+            <li><a href="gallery.html"><i class="fas fa-angle-right"></i> Gallery</a></li>
+            <li><a href="contact-us.html"><i class="fas fa-angle-right"></i> Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-widget-title">Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="service-details.html"><i class="fas fa-angle-right"></i> Wedding Planning</a></li>
+            <li><a href="service-details.html"><i class="fas fa-angle-right"></i> Corporate Galas</a></li>
+            <li><a href="service-details.html"><i class="fas fa-angle-right"></i> Live Concerts</a></li>
+            <li><a href="service-details.html"><i class="fas fa-angle-right"></i> Catering &amp; Decor</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-widget-title">Contact</h4>
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><div>742 Evergreen Terrace, Suite 500, New York, NY 10001</div></div>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><div>+1 (800) 123-4567</div></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i><div>help@eventmanagement.com</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 <a href="index.html">Event Management</a>. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="custom-modal-overlay" id="quoteModal">
+    <div class="custom-modal-box">
+      <div class="modal-header-bar">
+        <h4><i class="fas fa-calendar-check text-primary"></i> Ask Our Event Experts</h4>
+        <button class="modal-close-btn" data-modal-close>&times;</button>
+      </div>
+      <div class="modal-body-content">
+        <form class="ajax-form">
+          <div class="form-group" style="margin-bottom:15px;"><label>Name</label><input type="text" class="form-control" required></div>
+          <div class="form-group" style="margin-bottom:15px;"><label>Email</label><input type="email" class="form-control" required></div>
+          <div class="form-group" style="margin-bottom:20px;"><label>Question</label><textarea class="form-control" rows="3" required></textarea></div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <button class="back-to-top-btn" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="js/main.js"></script>
+</body>
+</html>

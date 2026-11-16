@@ -1,11 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" fill="none">
-  <g transform="translate(4, 6)">
-    <path d="M24 2L2 20H10V42H20V28H28V42H38V20H46L24 2Z" fill="#FFFFFF"/>
-    <path d="M24 10L14 18V38H18V26H30V38H34V18L24 10Z" fill="#7BB335"/>
-    <path d="M34 8L44 16V22L34 14V8Z" fill="#9CD84E" opacity="0.9"/>
-    <circle cx="24" cy="20" r="3.5" fill="#FFFFFF"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" width="280" height="60" fill="none">
+  <!-- Celebratory Sparkle / Star Icon Mark -->
+  <g transform="translate(10, 8)">
+    <defs>
+      <linearGradient id="logoGradWhite" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ff3d55" />
+        <stop offset="100%" stop-color="#fa7c41" />
+      </linearGradient>
+      <linearGradient id="goldGradWhite" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f59e0b" />
+        <stop offset="100%" stop-color="#fbbf24" />
+      </linearGradient>
+    </defs>
+    <!-- Background festive emblem circle with subtle ring -->
+    <circle cx="22" cy="22" r="21" fill="url(#logoGradWhite)" />
+    <!-- Celebratory crown / star emblem -->
+    <path d="M22 9 L25 18 L34 18 L27 23 L29 32 L22 27 L15 32 L17 23 L10 18 L19 18 Z" fill="#ffffff" />
+    <!-- Little sparkles -->
+    <circle cx="8" cy="10" r="2" fill="url(#goldGradWhite)" />
+    <circle cx="37" cy="33" r="2.5" fill="url(#goldGradWhite)" />
+    <circle cx="35" cy="8" r="1.5" fill="#ffffff" />
   </g>
-  <text x="62" y="31" font-family="'Outfit', 'Segoe UI', sans-serif" font-size="22" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">MORTGAGE</text>
-  <text x="195" y="31" font-family="'Outfit', 'Segoe UI', sans-serif" font-size="22" font-weight="800" fill="#7BB335" letter-spacing="-0.5">BROKER</text>
-  <text x="63" y="47" font-family="'Figtree', 'Segoe UI', sans-serif" font-size="9" font-weight="600" fill="#D2DEC8" letter-spacing="2.8">HOME LOANS &amp; FINANCING</text>
+  
+  <!-- Brand Text: EVENT MANAGEMENT in White & Coral -->
+  <text x="65" y="31" font-family="'Open Sans', 'Roboto', 'Montserrat', sans-serif" font-weight="900" font-size="22" letter-spacing="1.5" fill="#ffffff">EVENT</text>
+  <text x="148" y="31" font-family="'Open Sans', 'Roboto', 'Montserrat', sans-serif" font-weight="900" font-size="22" letter-spacing="1.5" fill="#ff3d55">MANAGEMENT</text>
+  <text x="66" y="47" font-family="'Open Sans', 'Roboto', sans-serif" font-weight="600" font-size="9" letter-spacing="3" fill="#abb8c3">PREMIER CELEBRATIONS &amp; EXPERIENCES</text>
 </svg>

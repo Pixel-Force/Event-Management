@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upcoming Events &amp; Tickets — Event Management</title>
+  <meta name="description" content="Browse our upcoming lineup of music festivals, annual success galas, luxury wedding showcases, and product launch summits. Reserve passes online.">
+  
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <div class="top-bar-item"><i class="fas fa-map-marker-alt"></i> <span>742 Evergreen Terrace, New York, NY 10001</span></div>
+        <div class="top-bar-item"><i class="fas fa-clock"></i> <span>Mon - Sat: 9:00 AM - 7:00 PM</span></div>
+      </div>
+      <div class="top-bar-right">
+        <div class="top-bar-item"><i class="fas fa-envelope"></i> <span>tickets@eventmanagement.com</span></div>
+        <div class="top-social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header with Clickable Logo -->
+  <header class="main-header">
+    <div class="container">
+      <div class="header-inner">
+        <!-- Logo and website name "Event Management" Clickable in Header -->
+        <a href="index.html" class="brand-logo-link" title="Event Management — Home">
+          <img src="images/logo.svg" alt="Event Management" class="brand-logo-img">
+        </a>
+
+        <nav class="main-nav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about-us.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+            <li class="nav-item active"><a href="our-events.html" class="nav-link">Events</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li class="nav-item"><a href="our-team.html" class="nav-link">Team</a></li>
+            <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="contact-us.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a href="#" class="btn btn-primary" data-modal-target="quoteModal">
+            <i class="fas fa-calendar-check"></i> Book Event
+          </a>
+          <button class="mobile-toggle-btn" aria-label="Toggle Navigation"><i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo-link"><img src="images/logo.svg" alt="Event Management" style="height: 38px;"></a>
+      <button class="drawer-close-btn">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li class="mobile-nav-item"><a href="about-us.html" class="mobile-nav-link">About Us</a></li>
+      <li class="mobile-nav-item"><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li class="mobile-nav-item"><a href="our-events.html" class="mobile-nav-link">Events</a></li>
+      <li class="mobile-nav-item"><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+      <li class="mobile-nav-item"><a href="contact-us.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+  </aside>
+
+  <!-- Titlebar -->
+  <section class="page-titlebar">
+    <div class="page-titlebar-overlay"></div>
+    <div class="container page-titlebar-content">
+      <h1>Our Upcoming Events</h1>
+      <div class="breadcrumb-nav">
+        <a href="index.html">Home</a>
+        <span class="separator"><i class="fas fa-chevron-right"></i></span>
+        <span>Events</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Listing & Filter Section -->
+  <section class="section-py">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-subtitle">Calendar &amp; Lineup</span>
+        <h2 class="section-title">Schedule of Celebrations &amp; Festivals</h2>
+        <p class="section-description">Filter by occasion and secure instant e-tickets or RSVP reservations.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="events-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Events</button>
+        <button class="filter-btn" data-filter="celebrations">Celebrations</button>
+        <button class="filter-btn" data-filter="festivals">Festivals &amp; Music</button>
+        <button class="filter-btn" data-filter="corporate">Corporate Summits</button>
+      </div>
+
+      <div class="events-grid">
+        <!-- 1 -->
+        <div class="event-card filterable-item" data-category="celebrations">
+          <div class="event-thumb-wrap">
+            <img src="images/events/event-1.jpg" alt="Annual Gala &amp; Success Party">
+            <div class="event-date-badge">
+              <span class="day">28</span>
+              <span class="month">Nov</span>
+            </div>
+          </div>
+          <div class="event-info">
+            <div>
+              <div class="event-meta">
+                <span><i class="fas fa-clock"></i> 7:00 PM - 1:00 AM</span>
+                <span><i class="fas fa-location-dot"></i> Grand Palace Ballroom, 35th Avenue, NY</span>
+              </div>
+              <h3 class="event-title"><a href="event-details.html">Annual Gala &amp; Success Celebration</a></h3>
+              <p style="font-size: 0.9rem; color: #64748b;">Black-tie champagne dinner celebrating excellence and innovation with live swing orchestra.</p>
+            </div>
+            <div class="event-footer">
+              <span class="event-price">$85.00</span>
+              <div style="display: flex; gap: 8px;">
+                <a href="event-details.html" class="btn btn-secondary" style="padding: 8px 14px; font-size: 0.85rem;">Details</a>
+                <button class="btn btn-primary" style="padding: 8px 14px; font-size: 0.85rem;" data-modal-target="ticketModal" data-event-title="Annual Gala &amp; Success Celebration" data-event-price="$85.00">
+                  <i class="fas fa-ticket"></i> Book
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="event-card filterable-item" data-category="festivals">
+          <div class="event-thumb-wrap">
+            <img src="images/events/event-2.jpg" alt="Neon Pulse Music Festival">
+            <div class="event-date-badge">
+              <span class="day">15</span>
+              <span class="month">Dec</span>
+            </div>
+          </div>
+          <div class="event-info">
+            <div>
+              <div class="event-meta">
+                <span><i class="fas fa-clock"></i> 4:00 PM - Midnight</span>
+                <span><i class="fas fa-location-dot"></i> Waterfront Festival Pier, Brooklyn, NY</span>
+              </div>
+              <h3 class="event-title"><a href="event-details.html">The Ronaldos Winter Music Festival</a></h3>
+              <p style="font-size: 0.9rem; color: #64748b;">Top electronic and indie acts across three vibrant stages with craft cocktail pavilions.</p>
+            </div>
+            <div class="event-footer">
+              <span class="event-price">$120.00</span>
+              <div style="display: flex; gap: 8px;">
+                <a href="event-details.html" class="btn btn-secondary" style="padding: 8px 14px; font-size: 0.85rem;">Details</a>
+                <button class="btn btn-primary" style="padding: 8px 14px; font-size: 0.85rem;" data-modal-target="ticketModal" data-event-title="The Ronaldos Winter Music Festival" data-event-price="$120.00">
+                  <i class="fas fa-ticket"></i> Book
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="event-card filterable-item" data-category="corporate">
+          <div class="event-thumb-wrap">
+            <img src="images/events/event-3.jpg" alt="Product Launch Reamold">
+            <div class="event-date-badge">
+              <span class="day">10</span>
+              <span class="month">Jan</span>
+            </div>
+          </div>
+          <div class="event-info">
+            <div>
+              <div class="event-meta">
+                <span><i class="fas fa-clock"></i> 10:00 AM - 5:00 PM</span>
+                <span><i class="fas fa-location-dot"></i> Metropolitan Technology Pavilion, NY</span>
+              </div>
+              <h3 class="event-title"><a href="event-details.html">Product Launch Reamold 2026</a></h3>
+              <p style="font-size: 0.9rem; color: #64748b;">Global media unveiling, executive keynote addresses, and high-tech experiential showcase.</p>
+            </div>
+            <div class="event-footer">
+              <span class="event-price">$65.00</span>
+              <div style="display: flex; gap: 8px;">
+                <a href="event-details.html" class="btn btn-secondary" style="padding: 8px 14px; font-size: 0.85rem;">Details</a>
+                <button class="btn btn-primary" style="padding: 8px 14px; font-size: 0.85rem;" data-modal-target="ticketModal" data-event-title="Product Launch Reamold 2026" data-event-price="$65.00">
+                  <i class="fas fa-ticket"></i> Book
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="event-card filterable-item" data-category="celebrations">
+          <div class="event-thumb-wrap">
+            <img src="images/events/event-4.jpg" alt="Steven &amp; Sofia Wedding">
+            <div class="event-date-badge">
+              <span class="day">14</span>
+              <span class="month">Feb</span>
+            </div>
+          </div>
+          <div class="event-info">
+            <div>
+              <div class="event-meta">
+                <span><i class="fas fa-clock"></i> 3:00 PM - 11:30 PM</span>
+                <span><i class="fas fa-location-dot"></i> Rosewood Estate &amp; Gardens, Hudson Valley</span>
+              </div>
+              <h3 class="event-title"><a href="event-details.html">Steven &amp; Sofia Royal Wedding Showcase</a></h3>
+              <p style="font-size: 0.9rem; color: #64748b;">Botanical greenhouse ceremony followed by starlight outdoor banquet and fireworks display.</p>
+            </div>
+            <div class="event-footer">
+              <span class="event-price">Private RSVP</span>
+              <button class="btn btn-secondary" style="padding: 8px 18px; font-size: 0.85rem;" data-modal-target="quoteModal">
+                <i class="fas fa-envelope"></i> Request RSVP
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="event-card filterable-item" data-category="festivals">
+          <div class="event-thumb-wrap">
+            <img src="images/events/event-5.jpg" alt="Summer Starlight Music Gala">
+            <div class="event-date-badge">
+              <span class="day">22</span>
+              <span class="month">Mar</span>
+            </div>
+          </div>
+          <div class="event-info">
+            <div>
+              <div class="event-meta">
+                <span><i class="fas fa-clock"></i> 5:00 PM - 11:00 PM</span>
+                <span><i class="fas fa-location-dot"></i> Central Park SummerStage, NY</span>
+              </div>
+              <h3 class="event-title"><a href="event-details.html">Summer Starlight Symphonic Gala</a></h3>
+              <p style="font-size: 0.9rem; color: #64748b;">Open-air live symphony performance paired with fine artisanal wines under the twilight skyline.</p>
+            </div>
+            <div class="event-footer">
+              <span class="event-price">$95.00</span>
+              <div style="display: flex; gap: 8px;">
+                <a href="event-details.html" class="btn btn-secondary" style="padding: 8px 14px; font-size: 0.85rem;">Details</a>
+                <button class="btn btn-primary" style="padding: 8px 14px; font-size: 0.85rem;" data-modal-target="ticketModal" data-event-title="Summer Starlight Symphonic Gala" data-event-price="$95.00">
+                  <i class="fas fa-ticket"></i> Book
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="event-card filterable-item" data-category="corporate">
+          <div class="event-thumb-wrap">
+            <img src="images/events/event-6.jpg" alt="International Leaders Forum">
+            <div class="event-date-badge">
+              <span class="day">05</span>
+              <span class="month">Apr</span>
+            </div>
+          </div>
+          <div class="event-info">
+            <div>
+              <div class="event-meta">
+                <span><i class="fas fa-clock"></i> 9:00 AM - 6:00 PM</span>
+                <span><i class="fas fa-location-dot"></i> Manhattan Financial Center, NY</span>
+              </div>
+              <h3 class="event-title"><a href="event-details.html">International Leadership &amp; Tech Forum</a></h3>
+              <p style="font-size: 0.9rem; color: #64748b;">Executive networking summit, visionary keynote addresses, and high-impact boardroom workshops.</p>
+            </div>
+            <div class="event-footer">
+              <span class="event-price">$180.00</span>
+              <div style="display: flex; gap: 8px;">
+                <a href="event-details.html" class="btn btn-secondary" style="padding: 8px 14px; font-size: 0.85rem;">Details</a>
+                <button class="btn btn-primary" style="padding: 8px 14px; font-size: 0.85rem;" data-modal-target="ticketModal" data-event-title="International Leadership &amp; Tech Forum" data-event-price="$180.00">
+                  <i class="fas fa-ticket"></i> Book
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer (Clickable Logo Requirement) -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-grid">
+        <div>
+          <!-- Logo and website name "Event Management" Clickable in Footer -->
+          <a href="index.html" class="footer-logo-link" title="Event Management — Home">
+            <img src="images/logo-white.svg" alt="Event Management" class="footer-logo-img">
+          </a>
+          <p class="footer-about-text"><strong>Event Management</strong> is an elite event production, wedding coordination, and celebrations agency renowned for bringing extraordinary visual elegance to every occasion.</p>
+          <div class="footer-social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-widget-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="about-us.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+            <li><a href="services.html"><i class="fas fa-angle-right"></i> Services</a></li>
+            <li><a href="our-events.html"><i class="fas fa-angle-right"></i> Events</a></li>
+            <li><a href="gallery.html"><i class="fas fa-angle-right"></i> Gallery</a></li>
+            <li><a href="contact-us.html"><i class="fas fa-angle-right"></i> Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-widget-title">Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="service-details.html"><i class="fas fa-angle-right"></i> Wedding Planning</a></li>
+            <li><a href="service-details.html"><i class="fas fa-angle-right"></i> Corporate Galas</a></li>
+            <li><a href="service-details.html"><i class="fas fa-angle-right"></i> Live Concerts</a></li>
+            <li><a href="service-details.html"><i class="fas fa-angle-right"></i> Catering &amp; Decor</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-widget-title">Contact</h4>
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><div>742 Evergreen Terrace, Suite 500, New York, NY 10001</div></div>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><div>+1 (800) 123-4567</div></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i><div>tickets@eventmanagement.com</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 <a href="index.html">Event Management</a>. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Ticket Booking Modal -->
+  <div class="custom-modal-overlay" id="ticketModal">
+    <div class="custom-modal-box">
+      <div class="modal-header-bar">
+        <h4><i class="fas fa-ticket text-primary"></i> Reserve Event Tickets</h4>
+        <button class="modal-close-btn" data-modal-close>&times;</button>
+      </div>
+      <div class="modal-body-content">
+        <h5 class="modal-event-title" style="color: var(--secondary-color); margin-bottom: 15px;">Event Pass</h5>
+        <form class="ajax-form">
+          <div class="form-group" style="margin-bottom: 15px;">
+            <label>Admission Tier</label>
+            <select class="form-control" required>
+              <option value="standard">Standard Admission</option>
+              <option value="vip">VIP Lounge &amp; Priority Pass</option>
+            </select>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px;">
+            <div class="form-group">
+              <label>Quantity</label>
+              <input type="number" class="form-control ticket-qty-input" value="1" min="1" max="10" required>
+            </div>
+            <div class="form-group">
+              <label>Total Price</label>
+              <div class="form-control" style="background:#f1f5f9; font-weight:800; color:var(--primary-color);">
+                <span class="ticket-total-price">$85.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group" style="margin-bottom: 15px;">
+            <label>Full Name</label>
+            <input type="text" class="form-control" required>
+          </div>
+          <div class="form-group" style="margin-bottom: 20px;">
+            <label>Email Address</label>
+            <input type="email" class="form-control" required>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Confirm &amp; Issue E-Tickets</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="custom-modal-overlay" id="quoteModal">
+    <div class="custom-modal-box">
+      <div class="modal-header-bar">
+        <h4><i class="fas fa-calendar-check text-primary"></i> Event Inquiry</h4>
+        <button class="modal-close-btn" data-modal-close>&times;</button>
+      </div>
+      <div class="modal-body-content">
+        <form class="ajax-form">
+          <div class="form-group" style="margin-bottom:15px;"><label>Name</label><input type="text" class="form-control" required></div>
+          <div class="form-group" style="margin-bottom:15px;"><label>Email</label><input type="email" class="form-control" required></div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send Request</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <button class="back-to-top-btn" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+  <script src="js/main.js"></script>
+</body>
+</html>

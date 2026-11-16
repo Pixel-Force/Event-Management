@@ -1,57 +1,47 @@
-# Project Memory: Mortgage Broker Template
+# Project Memory: Event Management Template
 
 ## 1. Project Overview & Context
-- **Project Name:** Mortgage Broker
-- **Target Reference:** [Ralo - Real Estate Mortgage & Loans Funding Theme](https://themes.envytheme.com/ralo/)
+- **Project Name:** Event Management
+- **Target Reference:** [Presentup - Event Planner & Celebrations Management Theme](https://presentup-demo.themetechmount.com/elementor-demo1/)
 - **Target Repositories:**
-  - [Penta-Websites/Mortgage-Broker](https://github.com/Penta-Websites/Mortgage-Broker)
-  - [Pixel-Force/Mortgage-Broker](https://github.com/Pixel-Force/Mortgage-Broker)
+  - [Penta-Websites/Event-Management](https://github.com/Penta-Websites/Event-Management)
+  - [Pixel-Force/Event-Management](https://github.com/Pixel-Force/Event-Management)
 - **Live URLs:**
-  - **Primary Live Site:** [https://pixel-force.github.io/Mortgage-Broker/](https://pixel-force.github.io/Mortgage-Broker/) (HTTP 200 OK - Active & Verified)
-  - **Mirror Site:** [https://penta-websites.github.io/Mortgage-Broker/](https://penta-websites.github.io/Mortgage-Broker/) (Configured on `gh-pages` and `main`)
+  - **Primary Live Site (Penta-Websites):** [https://penta-websites.github.io/Event-Management/](https://penta-websites.github.io/Event-Management/)
+  - **Mirror Live Site (Pixel-Force):** [https://pixel-force.github.io/Event-Management/](https://pixel-force.github.io/Event-Management/)
 
 ## 2. Branding & Logo Updates (Completed)
-- **Header Logo Update:**
-  - Replaced legacy `ralo-black.png` logo with official vector `images/logo.svg` across all 16 template pages.
-  - Updated desktop (`.black-logo`), mobile (`.m-logo`), and offcanvas drawer (`.logo`) navbar logos.
-- **Clickable Footer Logo:**
-  - Replaced footer logo with `images/logo.svg`.
-  - Wrapped footer logo in an anchor tag linking to `index.html` (`.footer-logo-link`) so it is fully clickable with smooth hover states across all 16 pages.
+- **Header Logo & Website Name:**
+  - Official vector `images/logo.svg` configured in the elevated sticky navbar.
+  - Linked to `index.html` via `.brand-logo-link` for 100% clickable navigation across all 15 template pages.
+- **Clickable Footer Logo & Website Name:**
+  - Official white vector variant `images/logo-white.svg` configured in the footer.
+  - Linked to `index.html` via `.footer-logo-link` with smooth hover states across all 15 pages.
 - **WordPress Footprint Removal:**
-  - Removed all `Reserved by EnvyTheme` text and external links, replaced with `© Mortgage Broker. All Rights Reserved.`
-  - Completely stripped all `data-elementor-*`, `data-widget_type`, `wp-*`, and WordPress comments/endpoints.
-  - Zero traces of WordPress, Elementor runtime clutter, or theme creator links remain.
+  - 100% removal of all `wp-content`, `wp-includes`, `elementor-*`, `tribe-*`, `themetechmount`, and WordPress database structures, references, or comments.
+  - Zero WordPress dependencies remain. Pure semantic HTML5, CSS3, and vanilla JavaScript.
 
-## 3. Production-Ready HTML5 Page Suite (16 Complete Pages)
-1. `index.html` — Homepage One (Hero Slider, Client Logos, 4 Service Cards, Calculator with Feature Showcase, Loan Options Carousel, 3-Step Process, Stats Counters, Video Modal, Team Roster, Reviews & Testimonials Carousel, Latest Blog, Pre-Footer CTA, and 4-Column Footer with Clickable Logo).
-2. `home-two.html` — Homepage Two (Alternative Layout).
-3. `home-three.html` — Homepage Three (Modern Alternative Layout).
-4. `about.html` — About Us (Company History, Values, and Leadership).
-5. `loan-programs.html` — Filterable Directory of Loan Programs.
-6. `loan-details.html` — Apartment & Commercial Loan Program Detail View.
-7. `calculator.html` — Interactive Mortgage Calculator & Payment Estimator.
-8. `team.html` — Management & Loan Officers Roster.
-9. `career.html` — Careers & Job Opportunities.
-10. `apply.html` — Mortgage Loan Application & Pre-Approval Request.
-11. `faqs.html` — Categorized FAQ Knowledge Base with Accordions.
-12. `privacy-policy.html` — Consumer Financial Privacy Policy.
-13. `terms-and-conditions.html` — Equal Housing Opportunity & Lending Terms.
-14. `blog.html` — Mortgage Insights & Real Estate News Listing.
-15. `blog-details.html` — Article View with Author Bio and Comments.
-16. `contact.html` — Branch Directory, Office Locations, and Lead Form.
+## 3. Production-Ready HTML5 Page Suite (15 Complete Pages)
+1. `index.html` — Homepage One (Celebrations & Weddings: Sticky Navbar, Hero with Dual CTAs, Quick Inquiry Filter Bar, About Section with Experience Counter, Stats Counter, 6 Service Offerings, Filterable Events with Ticket Modal, 6-Category Gallery with Lightbox, 4-Step Process, Testimonials, Recent Blog, Pre-Footer CTA Bar, and 4-Column Footer with Clickable Logo).
+2. `homepage-2.html` — Homepage Two (Concerts, Festivals & Arenas: High-energy hero, live event countdown clock, pass tiers & VIP ticket cards, stage schedule).
+3. `about-us.html` — About Us (Company story, founding vision, milestone timeline 2010–2026, core values, leadership team).
+4. `services.html` — Full Services Catalog (8 comprehensive event disciplines, 3-tier pricing comparison table: Silver, Gold, Platinum Packages).
+5. `service-details.html` — Service Deep Dive (Wedding Planning & Design, inclusion checklist, planning timeline, booking inquiry form, FAQs).
+6. `our-events.html` — Filterable Events Schedule (All, Celebrations, Festivals & Music, Corporate Summits, instant ticket modal).
+7. `event-details.html` — Event Detail View (Live countdown clock, run-of-show schedule itinerary, venue directions, ticket selection & booking).
+8. `our-team.html` — Event Production Team (Creative directors, lighting architects, floral designers, master sommeliers with bio cards & social links).
+9. `gallery.html` — Photo & Video Moments Gallery (Category filter tabs, responsive masonry grid, and interactive full-screen Lightbox viewer).
+10. `faq.html` — Categorized Knowledge Base (Accordion tabs for General Planning, Venues & Catering, Budget & Policies, live instant search).
+11. `blog.html` — Event Planning Journal (Article directory with featured photos, category badges, author tags, and sidebar widgets).
+12. `blog-details.html` — Full Article View (Typography, key takeaways callout, pro tips, author bio card, and comment submission form).
+13. `contact-us.html` — Contact & Studio Locations (Direct office cards, interactive lead inquiry form with instant validation, Google Maps embed placeholder).
+14. `privacy-policy.html` — Client Confidentiality & Data Protection Policy (Event non-disclosure agreements & privacy terms).
+15. `terms-and-conditions.html` — Terms of Service & Event Ticket Reservation Agreement.
 
 ## 4. Deployment Status
 - **Repositories Synchronized:**
-  - `origin`: `https://github.com/Penta-Websites/Mortgage-Broker.git` (`main` and `gh-pages`)
-  - `pixel`: `https://github.com/Pixel-Force/Mortgage-Broker.git` (`main` and `gh-pages`)
-- **Live URLs (Both Verified & Active - HTTP 200 OK):**
-  - **Penta-Websites:** [https://penta-websites.github.io/Mortgage-Broker/](https://penta-websites.github.io/Mortgage-Broker/) (HTTP 200 OK, Jekyll bypass enabled via `.nojekyll`, Pages source configured to `main` branch)
-  - **Pixel-Force:** [https://pixel-force.github.io/Mortgage-Broker/](https://pixel-force.github.io/Mortgage-Broker/) (HTTP 200 OK)
-
-## 5. Issue Resolution Log
-- **Penta-Websites 404 Issue:**
-  - *Cause*: The repository was missing a root `.nojekyll` file and GitHub Pages build had not been triggered after initial creation; GitHub Actions was disabled by the organization policy so legacy Jekyll build required `.nojekyll` and an active source trigger.
-  - *Resolution*: Created `.nojekyll` file at repository root, committed and pushed to both `main` and `gh-pages` across `origin` and `pixel`, and updated the Pages source to `main` (`/`). The site built successfully and returns `HTTP 200 OK`.
-- **Footer Bottom Whitespace & Stray Arrow Issue:**
-  - *Cause*: A redundant `.hfe-scroll-to-top-wrap` element remained after the closing `</footer>` in all 16 HTML pages; without fixed positioning, it rendered in normal document flow below the footer, creating a bottom white strip containing an unstyled black up-arrow `↑`.
-  - *Resolution*: Removed `<div class="hfe-scroll-to-top-wrap">` from all 16 HTML pages, added zero-margin footer CSS rules (`footer`, `#colophon`, `.copy-right-area` with `margin-bottom: 0 !important`), cleaned up `js/main.js` scroll handler to exclusively target the authentic `#backtotop` button, and verified flush footer layout via browser visual inspection.
+  - `origin`: `https://github.com/Penta-Websites/Event-Management.git` (`main` and `gh-pages`)
+  - `pixel`: `https://github.com/Pixel-Force/Event-Management.git` (`main` and `gh-pages`)
+- **Live URLs:**
+  - **Penta-Websites:** [https://penta-websites.github.io/Event-Management/](https://penta-websites.github.io/Event-Management/)
+  - **Pixel-Force:** [https://pixel-force.github.io/Event-Management/](https://pixel-force.github.io/Event-Management/)
