@@ -52,3 +52,6 @@
 - **Penta-Websites 404 Issue:**
   - *Cause*: The repository was missing a root `.nojekyll` file and GitHub Pages build had not been triggered after initial creation; GitHub Actions was disabled by the organization policy so legacy Jekyll build required `.nojekyll` and an active source trigger.
   - *Resolution*: Created `.nojekyll` file at repository root, committed and pushed to both `main` and `gh-pages` across `origin` and `pixel`, and updated the Pages source to `main` (`/`). The site built successfully and returns `HTTP 200 OK`.
+- **Footer Bottom Whitespace & Stray Arrow Issue:**
+  - *Cause*: A redundant `.hfe-scroll-to-top-wrap` element remained after the closing `</footer>` in all 16 HTML pages; without fixed positioning, it rendered in normal document flow below the footer, creating a bottom white strip containing an unstyled black up-arrow `↑`.
+  - *Resolution*: Removed `<div class="hfe-scroll-to-top-wrap">` from all 16 HTML pages, added zero-margin footer CSS rules (`footer`, `#colophon`, `.copy-right-area` with `margin-bottom: 0 !important`), cleaned up `js/main.js` scroll handler to exclusively target the authentic `#backtotop` button, and verified flush footer layout via browser visual inspection.

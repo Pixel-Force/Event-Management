@@ -62,13 +62,13 @@
         $(window).on('scroll', function () {
             var scrolled = $(window).scrollTop();
             if (scrolled > 300) {
-                $('#backtotop, .hfe-scroll-to-top-wrap').addClass('active').removeClass('hfe-scroll-to-top-hide');
+                $('#backtotop').addClass('active');
             } else {
-                $('#backtotop, .hfe-scroll-to-top-wrap').removeClass('active').addClass('hfe-scroll-to-top-hide');
+                $('#backtotop').removeClass('active');
             }
         });
 
-        $('#backtotop, .hfe-scroll-to-top-wrap').on('click', function () {
+        $('#backtotop').on('click', function () {
             $('html, body').animate({ scrollTop: '0' }, 500);
         });
 
