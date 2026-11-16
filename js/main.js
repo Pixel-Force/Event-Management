@@ -34,7 +34,47 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 2. MOBILE DRAWER NAVIGATION
+  // 2. HERO SLIDER LOGIC
+  const slides = document.querySelectorAll('.hero-slide');
+  const prevBtn = document.querySelector('.slider-prev-btn');
+  const nextBtn = document.querySelector('.slider-next-btn');
+  let currentSlide = 0;
+  let slideInterval = null;
+
+  function showSlide(index) {
+    slides.forEach((s, i) => {
+      s.classList.remove('active');
+      if (i === index) s.classList.add('active');
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  if (slides.length > 1) {
+    if (nextBtn) nextBtn.addEventListener('click', () => { nextSlide(); resetSlideInterval(); });
+    if (prevBtn) prevBtn.addEventListener('click', () => { prevSlide(); resetSlideInterval(); });
+
+    function startSlideInterval() {
+      slideInterval = setInterval(nextSlide, 7000);
+    }
+
+    function resetSlideInterval() {
+      clearInterval(slideInterval);
+      startSlideInterval();
+    }
+
+    startSlideInterval();
+  }
+
+  // 3. MOBILE DRAWER NAVIGATION
   const mobileToggleBtn = document.querySelector('.mobile-toggle-btn');
   const drawerCloseBtn = document.querySelector('.drawer-close-btn');
   const mobileDrawer = document.querySelector('.mobile-drawer');
@@ -78,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 3. CATEGORY FILTERING (EVENTS & GALLERY)
+  // 4. CATEGORY FILTERING (EVENTS & GALLERY)
   const filterBtns = document.querySelectorAll('.filter-btn');
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -105,11 +145,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 4. LIVE EVENT COUNTDOWN TIMER
+  // 5. LIVE EVENT COUNTDOWN TIMER
   const countdownEl = document.querySelector('.event-countdown');
   if (countdownEl) {
     const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 24); // 24 days in future
+    targetDate.setDate(targetDate.getDate() + 24);
     targetDate.setHours(18, 0, 0, 0);
 
     function updateCountdown() {
@@ -138,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(updateCountdown, 1000);
   }
 
-  // 5. MODAL SYSTEM (Tickets, Quotes, Search, Lightbox)
+  // 6. MODAL SYSTEM (Tickets, Quotes, Search, Lightbox)
   const openModalBtns = document.querySelectorAll('[data-modal-target]');
   const closeModalBtns = document.querySelectorAll('[data-modal-close]');
   const modals = document.querySelectorAll('.custom-modal-overlay');
@@ -149,7 +189,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const targetId = btn.getAttribute('data-modal-target');
       const targetModal = document.getElementById(targetId);
       if (targetModal) {
-        // If event ticket booking, pass event name and price
         const eventTitle = btn.getAttribute('data-event-title');
         const eventPrice = btn.getAttribute('data-event-price');
         if (eventTitle && targetModal.querySelector('.modal-event-title')) {
@@ -184,15 +223,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Ticket Modal Quantity Calculator
   function updateTicketTotal(modal) {
     const qtyInput = modal.querySelector('.ticket-qty-input');
     const unitPriceEl = modal.querySelector('.ticket-unit-price');
     const totalEl = modal.querySelector('.ticket-total-price');
 
-    if (qtyInput && unitPriceEl && totalEl) {
+    if (qtyInput && totalEl) {
       const qty = parseInt(qtyInput.value) || 1;
-      const unit = parseFloat(unitPriceEl.textContent.replace(/[^0-9.]/g, '')) || 49;
+      let unit = 50;
+      if (unitPriceEl) {
+        unit = parseFloat(unitPriceEl.textContent.replace(/[^0-9.]/g, '')) || 50;
+      }
       const total = qty * unit;
       totalEl.textContent = '$' + total.toFixed(2);
     }
@@ -205,7 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 6. GALLERY LIGHTBOX
+  // 7. GALLERY LIGHTBOX
   const galleryItems = document.querySelectorAll('.gallery-zoom-trigger');
   const lightboxModal = document.getElementById('lightboxModal');
   const lightboxImg = document.getElementById('lightboxImg');
@@ -213,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
   galleryItems.forEach(item => {
     item.addEventListener('click', (e) => {
       e.preventDefault();
-      const imgUrl = item.getAttribute('data-img-src') || item.closest('.gallery-item').querySelector('img').src;
+      const imgUrl = item.getAttribute('data-img-src') || item.closest('.gallery-box-item, .gallery-item').querySelector('img').src;
       if (lightboxModal && lightboxImg) {
         lightboxImg.src = imgUrl;
         lightboxModal.classList.add('active');
@@ -222,7 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 7. FAQ ACCORDIONS
+  // 8. FAQ ACCORDIONS
   const faqHeaders = document.querySelectorAll('.faq-accordion-header');
   faqHeaders.forEach(header => {
     header.addEventListener('click', () => {
@@ -230,7 +271,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const body = item.querySelector('.faq-accordion-body');
       const isActive = item.classList.contains('active');
 
-      // Close siblings if in same accordion group
       const group = item.closest('.faq-accordion-group');
       if (group) {
         group.querySelectorAll('.faq-accordion-item').forEach(sibling => {
@@ -250,7 +290,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 8. FORM SUBMISSIONS WITH SWEET NOTIFICATIONS
+  // 9. FORM SUBMISSIONS
   const inquiryForms = document.querySelectorAll('form.ajax-form');
   inquiryForms.forEach(form => {
     form.addEventListener('submit', (e) => {
@@ -270,17 +310,15 @@ document.addEventListener('DOMContentLoaded', () => {
           submitBtn.disabled = false;
           submitBtn.innerHTML = originalText;
         }
-        // Close modal if inside one
         const modal = form.closest('.custom-modal-overlay');
         if (modal) {
           modal.classList.remove('active');
           document.body.style.overflow = '';
         }
-      }, 900);
+      }, 800);
     });
   });
 
-  // Toast Notification helper
   function showToast(message, type = 'success') {
     let toast = document.querySelector('.custom-toast-msg');
     if (!toast) {
@@ -313,6 +351,6 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       toast.style.opacity = '0';
       toast.style.transform = 'translateX(-50%) translateY(50px)';
-    }, 4500);
+    }, 4000);
   }
 });
