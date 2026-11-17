@@ -12,7 +12,7 @@
   <!-- Google Fonts: Bangers for Display & Open Sans for Body -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Playball&family=Bangers&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
   <!-- Stylesheets -->
@@ -22,93 +22,65 @@
 <body>
 
   <!-- ==========================================================================
-       TOP BAR
+       MAIN OVERLAY HEADER & NAVIGATION (1:1 eventmanagement DEMO 1 REPLICATION)
+       Clickable Logo & Website Name "Event Management" -> index.html
        ========================================================================== -->
-  <div class="top-bar">
-    <div class="container">
-      <div class="top-bar-left">
-        <div class="top-bar-item">
-          <i class="fas fa-map-marker-alt"></i>
-          <span>742 Evergreen Terrace, New York, NY 10001</span>
-        </div>
-        <div class="top-bar-item">
-          <i class="fas fa-clock"></i>
-          <span>Mon - Sat: 9:00 AM - 7:00 PM</span>
-        </div>
-      </div>
-      <div class="top-bar-right">
-        <div class="top-bar-item">
-          <i class="fas fa-envelope"></i>
-          <span>info@eventmanagement.com</span>
-        </div>
-        <div class="top-social-links">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ==========================================================================
-       MAIN HEADER & NAVIGATION (CLICKABLE LOGO REQUIREMENT)
-       ========================================================================== -->
-  <header class="main-header header-overlay">
+  <header class="main-header">
     <div class="container">
       <div class="header-inner">
-        <!-- Logo & Website Name "Event Management" Clickable in Header -->
+        <!-- Clickable Brand Logo & Website Name -->
         <a href="index.html" class="brand-logo-link" title="Event Management — Home">
           <img src="images/logo-white.svg" alt="Event Management" class="brand-logo-img">
         </a>
 
-        <!-- Desktop Navigation -->
-        <nav class="main-nav">
+        <!-- Desktop Navigation Menu -->
+        <nav class="main-nav" aria-label="Primary Navigation">
           <ul class="navbar-nav">
             <li class="nav-item active">
               <a href="index.html" class="nav-link">Home <i class="fas fa-angle-down"></i></a>
-              <div class="dropdown-menu">
-                <a href="index.html" class="dropdown-item">HomePage 1 (Celebrations)</a>
-                <a href="homepage-2.html" class="dropdown-item">HomePage 2 (Festivals)</a>
-              </div>
+              <ul class="dropdown-menu">
+                <li><a href="index.html" class="dropdown-item">HomePage 1</a></li>
+                <li><a href="homepage-2.html" class="dropdown-item">HomePage 2</a></li>
+                <li><a href="index.html" class="dropdown-item">HomePage 3</a></li>
+                <li><a href="homepage-2.html" class="dropdown-item">HomePage 4</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a href="about-us.html" class="nav-link">Pages <i class="fas fa-angle-down"></i></a>
-              <div class="dropdown-menu">
-                <a href="about-us.html" class="dropdown-item">About Us</a>
-                <a href="services.html" class="dropdown-item">Services</a>
-                <a href="service-details.html" class="dropdown-item">Service Details</a>
-                <a href="our-events.html" class="dropdown-item">Our Events</a>
-                <a href="our-team.html" class="dropdown-item">Our Team</a>
-                <a href="gallery.html" class="dropdown-item">Gallery</a>
-                <a href="faq.html" class="dropdown-item">Faq</a>
-              </div>
+              <ul class="dropdown-menu">
+                <li><a href="about-us.html" class="dropdown-item">About Us</a></li>
+                <li><a href="services.html" class="dropdown-item">Services</a></li>
+                <li><a href="service-details.html" class="dropdown-item">Service Details</a></li>
+                <li><a href="our-events.html" class="dropdown-item">Our Events</a></li>
+                <li><a href="our-team.html" class="dropdown-item">Our Team</a></li>
+                <li><a href="gallery.html" class="dropdown-item">Gallery</a></li>
+                <li><a href="faq.html" class="dropdown-item">Faq</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a href="services.html" class="nav-link">Services <i class="fas fa-angle-down"></i></a>
-              <div class="dropdown-menu">
-                <a href="services.html" class="dropdown-item">All Services</a>
-                <a href="service-details.html" class="dropdown-item">Wedding Coordination</a>
-                <a href="service-details.html" class="dropdown-item">Catering &amp; Decor</a>
-                <a href="service-details.html" class="dropdown-item">Venue Selections</a>
-              </div>
+              <ul class="dropdown-menu">
+                <li><a href="services.html" class="dropdown-item">All Services</a></li>
+                <li><a href="service-details.html" class="dropdown-item">Service Details</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a href="our-events.html" class="nav-link">Events <i class="fas fa-angle-down"></i></a>
-              <div class="dropdown-menu">
-                <a href="our-events.html" class="dropdown-item">Upcoming Events</a>
-                <a href="event-details.html" class="dropdown-item">Event Details</a>
-              </div>
+              <ul class="dropdown-menu">
+                <li><a href="our-events.html" class="dropdown-item">Our Events</a></li>
+                <li><a href="event-details.html" class="dropdown-item">Event Details</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a href="gallery.html" class="nav-link">Portfolio</a>
             </li>
             <li class="nav-item">
               <a href="blog.html" class="nav-link">Blog <i class="fas fa-angle-down"></i></a>
-              <div class="dropdown-menu">
-                <a href="blog.html" class="dropdown-item">Blog Classic View</a>
-                <a href="blog-details.html" class="dropdown-item">Blog Single View</a>
-              </div>
+              <ul class="dropdown-menu">
+                <li><a href="blog.html" class="dropdown-item">Blog Classic</a></li>
+                <li><a href="blog.html" class="dropdown-item">Blog Grid View</a></li>
+                <li><a href="blog-details.html" class="dropdown-item">Blog Single View</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a href="contact-us.html" class="nav-link">Contact Us</a>
@@ -116,14 +88,16 @@
           </ul>
         </nav>
 
-        <!-- Header Actions -->
+        <!-- Header Right Utilities (Cart Basket + Search + Mobile Toggle) -->
         <div class="header-actions">
-          <button class="search-trigger-btn" data-modal-target="searchModal" aria-label="Search">
-            <i class="fas fa-search"></i>
-          </button>
-          <a href="#" class="btn btn-primary" data-modal-target="quoteModal">
-            <i class="fas fa-calendar-check"></i> Book Event
-          </a>
+          <div class="tm-header-icons">
+            <span class="tm-header-icon tm-header-wc-cart-link">
+              <a href="#" aria-label="Shopping Cart"><i class="fa-solid fa-basket-shopping"></i><span class="number-cart">0</span></a>
+            </span>
+            <div class="tm-header-icon tm-header-search-link">
+              <a href="#" data-modal-target="searchModal" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+          </div>
           <button class="mobile-toggle-btn" aria-label="Toggle Navigation">
             <i class="fas fa-bars"></i>
           </button>
@@ -175,44 +149,46 @@
   </aside>
 
   <!-- ==========================================================================
-       HERO SLIDER (REVOLUTION SLIDER 1:1 RECREATION)
+       HERO REVOLUTION SLIDER (1:1 eventmanagement DEMO 1 REPLICATION)
+       Exact Fonts, Layouts, Script Pretitle, Date Tag, Big Headline & Buttons
        ========================================================================== -->
-  <section class="hero-slider-wrap">
-    <!-- Slide 1 -->
+  <section class="event-slider-wrapper">
+    <!-- Slide 1: Let's Have A Party! -->
     <div class="hero-slide active" style="background-image: url('images/hero-bg-1.jpg');">
-      <div class="hero-overlay"></div>
-      <div class="container">
-        <div class="hero-content">
-          <div class="hero-sub-badge"><i class="fas fa-calendar-alt"></i> Your Celebration Presents — December 03rd 2026</div>
-          <h1 class="hero-display-title">LET'S HAVE A PARTY!</h1>
-          <p class="hero-desc">Planning a Wedding, Proposal, Corporate or Event in our busy city is not so easy, and it takes skills (and time) to make it all look easy-going.</p>
-          <div class="hero-btns">
-            <a href="#" class="btn btn-primary" data-modal-target="quoteModal">Online Request <i class="fas fa-arrow-right"></i></a>
-            <a href="gallery.html" class="btn btn-outline-white">More Gallery <i class="fas fa-images"></i></a>
-          </div>
+      <div class="hero-slide-overlay"></div>
+      <div class="hero-slide-content">
+        <div class="slide-pretitle-row">
+          <span class="slide-script-title">Your Celebration Presents</span>
+          <span class="slide-date-tag">December 03rd 2026</span>
+        </div>
+        <h1 class="slide-big-heading">LET'S HAVE A PARTY!<span class="slide-heading-dot"></span></h1>
+        <p class="slide-lead-desc">Planning a Wedding, Proposal, Corporate or Event in our busy city is not so<br> easy, and it takes skills (and time) to make it all look easy-going</p>
+        <div class="slide-btn-group">
+          <a href="#" class="btn-slide-primary" data-modal-target="quoteModal">Online Request</a>
+          <a href="gallery.html" class="btn-slide-outline">More Gallery</a>
         </div>
       </div>
     </div>
 
-    <!-- Slide 2 -->
+    <!-- Slide 2: We Plan The Best Events -->
     <div class="hero-slide" style="background-image: url('images/hero-bg-2.jpg');">
-      <div class="hero-overlay"></div>
-      <div class="container">
-        <div class="hero-content">
-          <div class="hero-sub-badge"><i class="fas fa-sparkles"></i> We Plan The</div>
-          <h1 class="hero-display-title">BEST <span>EVENTS</span></h1>
-          <p class="hero-desc">From intimate anniversary dinners to grand arena concerts, our master coordinators turn celebrations into timeless memories with zero stress.</p>
-          <div class="hero-btns">
-            <a href="#" class="btn btn-primary" data-modal-target="quoteModal">Get A Quote <i class="fas fa-arrow-right"></i></a>
-            <a href="about-us.html" class="btn btn-outline-white">About Us <i class="fas fa-info-circle"></i></a>
-          </div>
+      <div class="hero-slide-overlay"></div>
+      <div class="hero-slide-content">
+        <div class="slide-pretitle-row">
+          <span class="slide-script-title">We Plan The</span>
+        </div>
+        <h1 class="slide-big-heading">Best <span style="color: var(--tm-skincolor);">Events</span> <i class="fa-solid fa-gift" style="color: var(--tm-skincolor); font-size: 55px; vertical-align: middle; margin-left: 10px;"></i></h1>
+        <p class="slide-lead-desc">From intimate ceremonies to grand festivals, our dedicated master coordinators turn celebrations into timeless memories with zero stress.</p>
+        <div class="slide-btn-group">
+          <a href="#" class="btn-slide-primary" data-modal-target="quoteModal">Get A Quote</a>
+          <a href="about-us.html" class="btn-slide-outline">About Us <i class="fa-solid fa-play" style="font-size: 11px; margin-left: 6px;"></i></a>
         </div>
       </div>
     </div>
 
     <!-- Slider Navigation Arrows -->
-    <button class="slider-prev-btn" aria-label="Previous Slide"><i class="fas fa-chevron-left"></i></button>
-    <button class="slider-next-btn" aria-label="Next Slide"><i class="fas fa-chevron-right"></i></button>
+    <button class="slider-arrow-prev" aria-label="Previous Slide"><i class="fas fa-chevron-left"></i></button>
+    <button class="slider-arrow-next" aria-label="Next Slide"><i class="fas fa-chevron-right"></i></button>
   </section>
 
   <!-- ==========================================================================

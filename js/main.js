@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 2. HERO SLIDER LOGIC
   const slides = document.querySelectorAll('.hero-slide');
-  const prevBtn = document.querySelector('.slider-prev-btn');
-  const nextBtn = document.querySelector('.slider-next-btn');
+  const prevBtn = document.querySelector('.slider-prev-btn, .slider-arrow-prev');
+  const nextBtn = document.querySelector('.slider-next-btn, .slider-arrow-next');
   let currentSlide = 0;
   let slideInterval = null;
 

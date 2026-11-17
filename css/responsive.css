@@ -272,3 +272,66 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+/* 1:1 Responsive Header and Slider Controls */
+@media (max-width: 1200px) {
+  .slide-big-heading {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-header {
+    height: 90px;
+  }
+  .navbar-nav, .tm-header-icons {
+    display: none;
+  }
+  .menu-toggle-btn {
+    display: block;
+  }
+  .event-slider-wrapper {
+    height: 700px;
+  }
+  .slide-big-heading {
+    font-size: 55px;
+  }
+  .slide-script-title {
+    font-size: 30px;
+  }
+  .slide-date-tag {
+    font-size: 16px;
+    padding: 3px 12px;
+  }
+  .slide-lead-desc {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-slider-wrapper {
+    height: 580px;
+  }
+  .slide-big-heading {
+    font-size: 38px;
+    line-height: 1.1;
+  }
+  .slide-script-title {
+    font-size: 24px;
+  }
+  .slide-date-tag {
+    font-size: 14px;
+  }
+  .slide-btn-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .btn-slide-primary, .btn-slide-outline {
+    width: 100%;
+    max-width: 280px;
+  }
+  .slider-arrow-prev, .slider-arrow-next {
+    display: none;
+  }
+}
